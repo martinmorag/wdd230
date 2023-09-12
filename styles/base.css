@@ -1,0 +1,93 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;600&family=Poppins:wght@300&display=swap');
+
+body {
+    font-family: "Poppins";
+    margin: 0px;
+}
+header {
+    display: flex;
+    align-items: center;
+    max-width: 100%;
+    justify-content: center;
+    background-color: #B4C5E4;
+    padding: 50px;
+}
+header img {
+    height: 240px;
+    width: 200px;
+    margin-right: 20px;
+}
+nav a {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    padding-bottom: 13px;
+    padding-top: 10px;
+    background-color: #3C3744;
+    color: white;
+}
+main {
+    display: grid;
+    grid-template-rows: 3fr 2fr 1fr;
+    max-height: 650px;
+    width: 100%;
+    text-align: center;
+    align-content: center;
+    justify-items: center;
+}
+main h2 {
+    grid-row: 1/2;
+    border-bottom: 3px solid #3C3744;
+    max-height: 50px;
+}
+.activities {
+    grid-row: 2/3;
+}
+main ul {
+    padding: 0;
+    width: 20rem;
+}
+main li {
+    list-style-type: none;
+    background-color: #B4C5E4;
+    border-radius: 5px;
+    height: 25px;
+    color: black;
+    margin-bottom: 10px;
+    font-size: inherit;
+    padding-bottom: 3px;
+    padding-top: 3px;
+}
+main a {
+    text-decoration: none;
+    
+}
+#info {
+    background-color: #3C3744;
+    color: white;
+    font-family: "Poppins";
+    width: 100%;
+}
+.weatherWidget {
+    display: grid;
+    border-radius: 5px;
+    text-align: center;
+    align-content: center;
+    justify-items: center;
+}
+footer {
+    background-color: #B4C5E4;
+    height: auto;
+    margin: 0;
+}
+footer p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    margin: 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
