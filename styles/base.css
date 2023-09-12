@@ -40,6 +40,7 @@ main h2 {
     grid-row: 1/2;
     text-decoration: underline;
     max-height: 50px;
+    padding-top: 10px;
 }
 .activities {
     grid-row: 2/3;
