@@ -69,7 +69,7 @@ main a {
     font-family: "Poppins";
     width: 100%;
 }
-.weatherWidget {
+.weather {
     display: grid;
     border-radius: 5px;
     text-align: center;
