@@ -30,7 +30,7 @@ nav a {
 main {
     display: grid;
     grid-template-rows: 3fr 2fr 1fr;
-    max-height: 600px;
+    max-height: 850px;
     width: 100%;
     text-align: center;
     align-content: center;
@@ -92,4 +92,3 @@ footer p {
     padding-top: 10px;
     padding-bottom: 10px;
 }
-
