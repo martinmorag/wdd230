@@ -57,8 +57,7 @@ main li {
     color: black;
     margin-bottom: 10px;
     font-size: inherit;
-    padding-bottom: 3px;
-    padding-top: 3px;
+    padding-top: 5px;
 }
 main a {
     text-decoration: none;
