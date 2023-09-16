@@ -1,0 +1,27 @@
+@media screen and (max-width: 400px){
+    
+    header img {
+        height: 190px;
+        width: 150px;
+    }
+    nav {
+        display: block;
+        font-weight: lighter;
+        align-items: inherit;
+        justify-content: inherit;
+    }
+    nav a {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        padding-bottom: 13px;
+        padding-top: 10px;
+        background-color: #3C3744;
+        color: white;
+    }
+
+    main {
+        background-color: #3C3744;
+        color: white;
+    }
+}
