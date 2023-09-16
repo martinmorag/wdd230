@@ -24,4 +24,14 @@
         background-color: #3C3744;
         color: white;
     }
+
+    main ul {
+        width: 18rem;
+    }
+
+    main li {
+        font-size: 12px;
+        padding-top: 8px;
+    }
+
 }
