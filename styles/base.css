@@ -18,14 +18,23 @@ header img {
     width: 200px;
     margin-right: 20px;
 }
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    max-width: 100%;
+    background-color: #3C3744;
+}
 nav a {
     display: block;
-    text-align: center;
     text-decoration: none;
     padding-bottom: 13px;
     padding-top: 10px;
-    background-color: #3C3744;
+    padding-left: 1rem;
+    padding-right: 1rem;
     color: white;
+    font-size: 18px;
 }
 main {
     display: grid;
