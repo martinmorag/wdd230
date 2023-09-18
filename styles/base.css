@@ -61,7 +61,7 @@ main h2 {
 main ul {
     grid-column: 1 / 2;
     padding: 0;
-    width: 25rem;
+    width: 30rem;
 }
 main li {
     list-style-type: none;
