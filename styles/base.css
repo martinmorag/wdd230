@@ -18,13 +18,20 @@ header img {
     width: 200px;
     margin-right: 20px;
 }
-nav {
+nav ul {
     display: flex;
     align-items: center;
     justify-content: center;
     padding: 20px;
     max-width: 100%;
     background-color: #3C3744;
+    margin: 0;
+}
+nav li {
+    list-style-type: none;
+}
+#menu-toggle {
+    display: none;
 }
 nav a {
     display: block;
@@ -36,6 +43,11 @@ nav a {
     color: white;
     font-size: 18px;
 }
+/* Wayfinding Icon */
+nav a.active::before {
+    content: '📍';
+}
+
 main {
     display: grid;
     grid-template-rows: 3fr 2fr 1fr;
