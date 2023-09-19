@@ -1,0 +1,69 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+
+body {
+    background-color: #4A6FA5;
+    color: #EAF3F7;
+    font-family: 'Quicksand';
+    margin: 0;
+}
+
+/* HEADER */
+header {
+    padding: 1rem;
+    padding-left: 2rem;
+    text-align: left;
+    width: 80%;
+}
+
+/* MAIN */
+main {
+    background-color: #EAF3F7;
+    color: #4A6FA5;
+    margin: 0;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    
+}
+/* MISSION SECTION */
+.mission h3 {
+    margin: 0;
+    font-size: 1.7rem;
+}
+.mission p {
+    font-size: 1.2rem;
+}
+.mission {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mission div {
+    max-width: 50%;
+    display: block;
+}
+.mission h3, .mission p {
+    text-align: center;
+}
+/* SCENARIOS SECTION */
+.scenarios {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 2rem;
+    margin: 0;
+}
+.scenarios p {
+    padding: 1rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
+    background-color: #4A6FA5;
+    color: #EAF3F7;
+    border-radius: 8px;
+}
+
+/* FOOTER */
+footer p {
+    padding-right: 2rem;
+    text-align: end;
+}
+
