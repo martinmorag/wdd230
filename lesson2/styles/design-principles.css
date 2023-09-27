@@ -1,64 +1,65 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital@1&display=swap');
+@media screen and (min-width: 1024px){
 
-* {
-    font-family: 'Montserrat';
-    background-color: #E7EBC5;
-    color: #51344D;
-}
+    * {
+        font-family: 'Montserrat';
+        background-color: #E7EBC5;
+        color: #51344D;
+    }
 
-body {
-    display: grid;
-    grid-template-rows: 200px 1fr 100px;
-    text-align: center;
-}
+    header {
+        grid-row: 1 / 2;
+        grid-column: 1 / -1; /* Span across all columns */
+        padding: 2rem;
+        background-color: #51344D;
+        text-align: center;
+        width: 100%;
+    }
 
-header {
-    grid-row: 1 / 2;
-    grid-column: 1 / -1; /* Span across all columns */
-    padding: 2rem;
-    background-color: #51344D;
-}
+    header h1, header h2 {
+        background-color: #51344D;
+        color: #E7EBC5;
+    }
 
-header h1, header h2 {
-    background-color: #51344D;
-    color: #E7EBC5;
-}
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-gap: 1rem;
+        padding: 1rem;
+        text-align: center;
+        width: inherit;
+    }
 
-main {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr; /* Two equal columns */
-    grid-gap: 1rem;
-    padding: 1rem;
-}
+    div {
+        padding: 2rem;
+        border: 2px solid #51344D;
+    }
+    .proximity {
+        grid-column: 1 / 2;
+    }
+    .alignment {
+        grid-column: 2 / 3;
+    }
+    .repetition {
+        grid-column: 3 / 4;
+    }
+    #proximity img,
+    #alignment img,
+    #repetition img {
+        width: 350px; 
+    }
 
-div {
-    padding: 2rem;
-    border: 2px solid #51344D;
-}
+    footer {
+        grid-row: 3 / 4;
+        padding: 1rem;
+        text-align: center;
+    }
 
-#proximity {
-    grid-column: 1 / 2;
-}
+    a {
+        text-decoration: none;
+    }
 
-#alignment {
-    grid-column: 2 / 3;
-}
-
-#proximity img,
-#alignment img,
-#repetition img {
-    width: 350px; 
-}
-
-footer {
-    grid-row: 3 / 4;
-    padding: 1rem;
-}
-
-a {
-    text-decoration: none;
-}
-
-nav {
-    padding-bottom: 1rem;
+    nav {
+        padding-bottom: 1rem;
+    }
 }
