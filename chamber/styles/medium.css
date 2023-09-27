@@ -61,19 +61,26 @@
         max-height: 1500px;
         display: grid;
         grid-template-areas:
+            "title"
             "hero"
             "event  weather"
             "spotlight";
         grid-template-columns: 2fr 1fr;
-        grid-template-rows: auto 200px 250px;
+        grid-template-rows: 100 px auto 200px 250px;
         align-items: center;
         justify-items: center;
         gap: 10px;
         padding: 1rem;
     }
+    .title {
+        grid-area: title;
+        grid-row: 1 / 2;
+        grid-column: 1 / 3;
+        text-align: center;
+    }
     .hero {
         grid-area: hero;
-        grid-row: 1 / 2;
+        grid-row: 2 / 3;
         grid-column: 1 / 3;
     }
     .event a, .weather a, .spotlight a {
@@ -81,7 +88,7 @@
     }
     .event {
         grid-area: event;
-        grid-row: 2 / 3;
+        grid-row: 3 / 4;
         grid-column: 1 / 2;
         background-color: #0B132B;
         opacity: .7;
@@ -94,7 +101,7 @@
     }
     .weather {
         grid-area: weather;
-        grid-row: 2 / 3;
+        grid-row: 3 / 4;
         grid-column: 2 / 3;
         background-color: #0B132B;
         opacity: .7;
@@ -108,7 +115,7 @@
     .spotlight {
         display: flex;
         grid-area: spotlight;
-        grid-row: 3 / 4;
+        grid-row: 4 / 5;
         grid-column: 1 / 3;
         padding: 2rem;
     }
