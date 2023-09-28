@@ -28,9 +28,6 @@ nav ul {
 nav li {
     list-style-type: none;
 }
-#menu-toggle {
-    display: none;
-}
 nav a {
     display: block;
     text-decoration: none;
@@ -40,10 +37,6 @@ nav a {
     padding-right: 1rem;
     color: white;
     font-size: 18px;
-}
-/* Wayfinding Icon */
-nav a.active::before {
-    content: '📍';
 }
 
 main {
