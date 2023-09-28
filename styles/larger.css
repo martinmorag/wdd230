@@ -6,6 +6,7 @@
     }
     nav ul {
         display: flex;
+        flex-direction: column;
         font-weight: lighter;
         align-items: inherit;
         justify-content: inherit;
@@ -18,37 +19,6 @@
         padding-top: 10px;
         background-color: #3C3744;
         color: white;
-    }
-
-    #menu-toggle {
-        display: block;
-        background-color: transparent;
-        border: none;
-        font-size: 24px;
-        color: white;
-        cursor: pointer;
-        position: absolute; 
-        top: 1rem;
-        left: 1rem;
-    }
-
-    .navigation {
-        display: flex;
-        align-items: center; /* Vertically center content */
-        justify-content: center; /* Horizontally distribute content */
-        background-color: #3C3744;
-        position: relative;
-        padding-top: 3rem;
-    }
-
-    nav ul {
-        display: none;
-        flex-direction: column;
-        text-align: center;
-    }
-    
-    nav ul.active {
-        display: flex;
     }
 
 
