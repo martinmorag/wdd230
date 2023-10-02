@@ -87,7 +87,7 @@
             "weather"
             "spotlight";
         grid-template-columns: 1fr;
-        grid-template-rows: 100 px auto 300px 250px 600px;
+        grid-template-rows: 100px auto 300px 250px 600px;
         align-items: center;
         justify-items: center;
         gap: 10px;
