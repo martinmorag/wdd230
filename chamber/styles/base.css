@@ -71,7 +71,7 @@
             "event  weather"
             "spotlight";
         grid-template-columns: 2fr 1fr;
-        grid-template-rows: 100 px auto 200px 250px;
+        grid-template-rows: 100px auto 200px 250px;
         align-items: center;
         justify-items: center;
         gap: 10px;
