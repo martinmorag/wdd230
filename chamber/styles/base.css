@@ -11,14 +11,25 @@
     a {
         text-decoration: none;
     }
+    /* hamburger menu*/
+    #menu {
+        display: none;
+    }
+    /* dark mode button */
+    #dark {
+        border-color: transparent;
+        background-color: transparent;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 1.2rem;
+        right: 2rem;
+    }
     /* HEADER */
     header {
         background-color: #0B132B;
         display: flex;
         justify-content: flex-start;
-    }
-    #menu {
-        display: none;
     }
     .navigation {
         display: flex;
