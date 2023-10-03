@@ -123,8 +123,8 @@
         grid-row: 3 / 4;
         grid-column: 1 / 2;
         background-color: #0B132B;
-        opacity: .7;
-        color: #E6E8E6;
+        opacity: .8;
+        color: #f4faf4;
         font-size: 1.3rem;
         padding: 2rem;
         padding-left: 2rem;
@@ -139,8 +139,8 @@
         grid-row: 4 / 5;
         grid-column: 1 / 2;
         background-color: #0B132B;
-        opacity: .7;
-        color: #E6E8E6;
+        opacity: .8;
+        color: #f4faf4;
         padding: 2rem;
         font-size: 1.2rem;
         padding-left: 2rem;
@@ -160,8 +160,8 @@
     }
     .review {
         background-color: #0B132B;
-        opacity: .7;
-        color:#E6E8E6;
+        opacity: .8;
+        color: #f4faf4;
         font-size: 1.1rem;
         height: 70%;
         padding: 1rem;
