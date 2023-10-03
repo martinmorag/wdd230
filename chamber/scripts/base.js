@@ -25,3 +25,32 @@ hamButton.addEventListener('click', () => {
 	navigation.classList.toggle('open');
 	hamButton.classList.toggle('open');
 });
+
+
+/* dark mode button */
+
+const darkModeButton = document.querySelector('#dark')
+const content = document.querySelector('main')
+
+let isDarkMode = localStorage.getItem('darkMode') === 'true';
+
+function setMode(isDark) {
+    if (isDark) {
+        content.style.backgroundColor = '#0B132B';
+        content.style.color = 'white';
+    } else {
+        content.style.backgroundColor = 'white';
+        content.style.color = '#0B132B';
+        thing.style.color = 'white'
+    }
+}
+
+setMode(isDarkMode);
+
+darkModeButton.addEventListener('click', () => {
+    isDarkMode = !isDarkMode;
+    
+    localStorage.setItem('darkMode', isDarkMode);
+
+    setMode(isDarkMode);
+});
