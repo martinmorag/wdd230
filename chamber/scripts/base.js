@@ -41,7 +41,6 @@ function setMode(isDark) {
     } else {
         content.style.backgroundColor = 'white';
         content.style.color = '#0B132B';
-        thing.style.color = 'white'
     }
 }
 
