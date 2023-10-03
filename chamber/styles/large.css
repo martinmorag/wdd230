@@ -9,11 +9,21 @@
     a {
         text-decoration: none;
     }
+    /* dark mode button */
+    #dark {
+        border-color: transparent;
+        background-color: transparent;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: .7rem;
+        right: .5rem;
+    }
     /* HEADER */
     header {
         padding: 0.5rem;
         background-color: #0B132B;
-        width: 100%;
+        max-width: 100%;
     }
     /* Hamburger button */
     .navigation {
@@ -60,7 +70,7 @@
         padding: 1rem;
     }
     .hero img {
-        width: 400px;
+        width: 350px;
         height: auto;
         opacity: .65;
         position: relative;
@@ -90,7 +100,7 @@
         grid-template-rows: 100px auto 300px 250px 600px;
         align-items: center;
         justify-items: center;
-        gap: 10px;
+        gap: 5px;
         padding: 1rem;
     }
     .title {
@@ -98,6 +108,7 @@
         grid-row: 1 / 2;
         grid-column: 1 / 2;
         text-align: center;
+        width: 100%;
     }
     .hero {
         grid-area: hero;
@@ -116,11 +127,12 @@
         color: #E6E8E6;
         font-size: 1.3rem;
         padding: 2rem;
-        padding-left: 4rem;
-        padding-right: 4rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
         border-radius: 7px;
         height: 75%;
         width: 70%;
+        text-align: center;
     }
     .weather {
         grid-area: weather;
@@ -131,17 +143,20 @@
         color: #E6E8E6;
         padding: 2rem;
         font-size: 1.2rem;
-        padding-left: 4rem;
-        padding-right: 4rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
         border-radius: 7px;
         height: 75%;
+        width: 60%;
+        text-align: center;
     }
     .spotlight {
         display: block;
         grid-area: spotlight;
         grid-row: 5 / 6;
         grid-column: 1 / 2;
-        padding: 2rem;
+        padding: .5rem;
+        max-width: 100%;
     }
     .review {
         background-color: #0B132B;
