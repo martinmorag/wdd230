@@ -1,10 +1,10 @@
 
-@media screen and (max-width: 767px){
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
     
-    body {
+    body{
         font-family: "DM Sans";
-        font-size: 1rem;
-        margin: 0;
+        font-size: 1.2rem;
     }
     a {
         text-decoration: none;
@@ -16,51 +16,31 @@
         width: 30px;
         height: 30px;
         position: absolute;
-        top: .7rem;
-        right: .5rem;
+        top: 1.2rem;
+        right: 2rem;
     }
     /* HEADER */
     header {
-        padding: 0.5rem;
         background-color: #0B132B;
-        max-width: 100%;
-    }
-    /* Hamburger button */
-    .navigation {
-        display: flex;
-        flex-direction: column;
-        list-style: none;
-    }
-    .navigation li {
-        display: none;
-    }
-    .navigation li a {
-        display: block;
-        padding: 1rem;
-        text-align: center;
-        text-decoration: none;
-        color: #E6E8E6;
+        margin: 0;
+        height: 4rem;
     }
     #menu {
-        display: block;
-        position: absolute;
-	    top: .75rem;
-        background-color: transparent;
+        display: none;
     }
-    #menu::before {
-        content: "☰";
+    .navigation {
+        display: flex;
+        padding: 1.5rem;
+        list-style: none;
+    }
+    .navigation a {
+        text-decoration: none;
+        margin-right: 2rem;
+        margin-left: 2rem;
         color: #E6E8E6;
     }
-    #menu.open::before {
-        content: "☰";
-        color: #E6E8E6;
-    }
-    .open li {
-        display: block;
-        width: 100%;
-    }
-    .open li a {
-        display: block;
+    header ul {
+        margin: 0;
     }
     /* MAIN */
     .hero {
@@ -70,7 +50,7 @@
         padding: 1rem;
     }
     .hero img {
-        width: 350px;
+        width: 768px;
         height: auto;
         opacity: .65;
         position: relative;
@@ -82,7 +62,7 @@
         color: #E6E8E6;
         border: none;
         cursor: pointer;
-        padding: .7rem;
+        padding: 1rem;
         border-radius: 5px;
         opacity: .9;
     }
@@ -93,27 +73,25 @@
         grid-template-areas:
             "title"
             "hero"
-            "event"
-            "weather"
+            "event  weather"
             "spotlight";
-        grid-template-columns: 1fr;
-        grid-template-rows: 100px auto 300px 250px 600px;
+        grid-template-columns: 2fr 1fr;
+        grid-template-rows: 100px auto 200px 250px;
         align-items: center;
         justify-items: center;
-        gap: 5px;
+        gap: 10px;
         padding: 1rem;
     }
     .title {
         grid-area: title;
         grid-row: 1 / 2;
-        grid-column: 1 / 2;
+        grid-column: 1 / 3;
         text-align: center;
-        width: 100%;
     }
     .hero {
         grid-area: hero;
         grid-row: 2 / 3;
-        grid-column: 1 / 2;
+        grid-column: 1 / 3;
     }
     .event a, .weather a, .spotlight a {
         color: rgb(175, 241, 219);
@@ -125,38 +103,31 @@
         background-color: #0B132B;
         opacity: .8;
         color: #f4faf4;
-        font-size: 1.3rem;
         padding: 2rem;
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
         border-radius: 7px;
         height: 75%;
-        width: 70%;
-        text-align: center;
     }
     .weather {
         grid-area: weather;
-        grid-row: 4 / 5;
-        grid-column: 1 / 2;
+        grid-row: 3 / 4;
+        grid-column: 2 / 3;
         background-color: #0B132B;
         opacity: .8;
         color: #f4faf4;
         padding: 2rem;
-        font-size: 1.2rem;
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding-left: 4rem;
+        padding-right: 4rem;
         border-radius: 7px;
         height: 75%;
-        width: 60%;
-        text-align: center;
     }
     .spotlight {
-        display: block;
+        display: flex;
         grid-area: spotlight;
-        grid-row: 5 / 6;
-        grid-column: 1 / 2;
-        padding: .5rem;
-        max-width: 100%;
+        grid-row: 4 / 5;
+        grid-column: 1 / 3;
+        padding: 2rem;
     }
     .first_review, .second_review {
         background-color: #0B132B;
@@ -169,15 +140,27 @@
         text-align: center;
         border-radius: 7px;
     }
+
     /* FOOTER */
     footer {
         background-color: #E6E8E6;
         color: #0B132B;
-        font-size: .9rem;
+        font-size: .8rem;
         padding-top: 1rem;
         padding-bottom: 1rem;
         text-align: center;
         width: 100%;
-        display: block;
     }
+    footer .first {
+        display: flex;
+        justify-content: center;
+    }
+    p {
+        padding: .5rem;
+        margin: 0;
+        margin-left: .5rem;
+        margin-right: .5rem;
+    }
+    
+
 }
