@@ -1,0 +1,47 @@
+:root {
+	--border: black;
+    --borderlight: rgb(201, 201, 201);
+    --borderstrong: rgb(87, 83, 83);
+    --first_background: black;
+    --second_background: rgb(87, 83, 83);
+    --shadow: rgb(228, 228, 228);
+    --letter: white;
+;
+}
+
+body {
+	font-family: "EB Garamond", Arial, serif;
+}
+table {
+	margin:10px auto;
+	border: thin solid var(--border);
+	border-collapse: collapse;
+}
+caption {
+
+    font-size: 1rem;
+    padding: .5rem;
+    caption-side: bottom;
+}
+th {
+    padding: 7px 15px;
+    background-color: var(--second_background);
+    border: 1px solid var(--borderstrong);
+    color: var(--letter);
+}
+.acme, .blank {
+    background-color: var(--first_background);
+    color: var(--letter)
+}
+.blank {
+    border-top: 2px solid var(--border);
+}
+td {
+	padding: 7px 15px;
+	border: .5px solid var(--borderlight);
+    font-weight: bold;
+    text-align: center;
+}
+tr:nth-child(even) {
+    background-color: var(--shadow);
+}
