@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (!isNaN(temperature) && !isNaN(windSpeed)) {
             if (temperature <= 50 && windSpeed > 3.0) {
                 const windChill = calculateWindChill(temperature, windSpeed);
-                windChillElement.textContent = `Wind Chill: ${windChill.toFixed(2)}°F`;
+                windChillElement.textContent = `${windChill.toFixed(2)}°F`;
             } else {
                 windChillElement.textContent = 'N/A';
             }
