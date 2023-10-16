@@ -53,13 +53,16 @@
         padding: 1rem;
     }
     .hero img {
-        width: 1000px;
+        width: 100%;
         height: auto;
         opacity: .65;
         position: relative;
     }
     main button {
         position: absolute;
+        top: 60%;
+        left: 50%; 
+        transform: translate(-50%, -50%); 
         z-index: 1;
         background-color: #0B132B;
         color: #E6E8E6;
@@ -122,11 +125,9 @@
         background-color: #0B132B;
         opacity: .8;
         color: #f4faf4;
-        padding: 2rem;
-        padding-left: 4rem;
-        padding-right: 4rem;
+        padding: .5rem 2rem 1rem;
         border-radius: 7px;
-        height: 75%;
+        height: 100%;
     }
     .spotlight {
         display: flex;
