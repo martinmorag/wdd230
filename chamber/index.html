@@ -34,7 +34,11 @@
     <main>
         <h1 class="title">Buenos Aires Chamber of Commerce</h1>
         <div class="hero">
-            <img alt="Hero Image" src="images/hero-image.jpg">
+            <picture>
+                <source srcset="images/hero-small.webp" media="(max-width: 767px)">
+                <source srcset="images/hero-medium.webp" media="(max-width: 1023px)">
+                <img alt="Hero Image" src="images/hero-image.webp" width="1000" height="666">
+            </picture>
             <button class="join">
                 JOIN!
             </button>
@@ -47,8 +51,9 @@
         </section>
         <section class="item weather">
             <h3>Weather</h3>
-            <p>Cloudy</p>
-            <p>20ºC</p>
+            <p>Temperature: <input type="number" name="temperature" class="temperature"></p>
+            <p>Windspeed: <input type="number" name="windspeed" class="windspeed"></p>
+            <p>Wind Chill: <span class="windchill"></span></p>
         </section>
         <section class="item spotlight">
             <div class="first_review">
@@ -74,6 +79,7 @@
             <p>Last Modification: <span id="lastModified"></span></p>
         </div>
     </footer>
-    <script src="scripts/base.js"></script>    
+    <script src="scripts/base.js"></script>
+    <script src="scripts/windchill.js"></script>    
 </body>
 </html>
