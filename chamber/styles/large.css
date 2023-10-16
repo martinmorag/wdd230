@@ -70,13 +70,16 @@
         padding: 1rem;
     }
     .hero img {
-        width: 350px;
+        width: 100%;
         height: auto;
         opacity: .65;
         position: relative;
     }
     main button {
         position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
         z-index: 1;
         background-color: #0B132B;
         color: #E6E8E6;
@@ -143,12 +146,18 @@
         color: #f4faf4;
         padding: 2rem;
         font-size: 1.2rem;
-        padding-left: 2rem;
-        padding-right: 2rem;
+        padding: .5rem 2rem 2rem;
         border-radius: 7px;
         height: 75%;
         width: 60%;
         text-align: center;
+    }
+    .weather h3 {
+        margin: 1rem 0 .5rem;
+    }
+    .weather p {
+        font-size: 1rem;
+        padding: .3rem 0 .3rem;
     }
     .spotlight {
         display: block;
