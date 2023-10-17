@@ -1,0 +1,60 @@
+{
+    "members" : [
+        {
+            "name" : "Colon Theater",
+            "address" : "City of Buenos Aires, Buenos Aires",
+            "phoneNumber" : 1143787100,
+            "website" : "https://teatrocolon.org.ar/es",
+            "icon" : "https://bybattaglia.com/wp-content/uploads/2022/09/teatro-colon-large.jpg",
+            "membershipLevel" : "Silver"
+        },
+        {
+            "name" : "Barolo Palace",
+            "address" :"City of Buenos Aires, Buenos Aires",
+            "phoneNumber" : 1132211331,
+            "website" : "http://www.palaciobarolo.com.ar/",
+            "icon" : "https://i1.wp.com/papeleracontemporanea.com/wp-content/uploads/2019/07/MOCKUP-BAROLO-copia.jpg?fit=2433%2C2708&ssl=1",
+            "membershipLevel" : "Bronze"
+        },
+        {
+            "name" : "Pertutti",
+            "address" : "Adrogue, Buenos Aires",
+            "phoneNumber" : 1142943280,
+            "website" : "http://www.pertuttirestaurante.com.ar/",
+            "icon" : "https://scontent-eze1-1.xx.fbcdn.net/v/t39.30808-6/326327568_1301950553705350_113752209257361832_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=5f2048&_nc_ohc=ekT-cSRXANkAX8-eCbx&_nc_ht=scontent-eze1-1.xx&oh=00_AfA5W1SYlSnR_GqVtCADCyVyyN2xOK2r1UZozU5chpJt8w&oe=65327C80",
+            "membershipLevel" : "Gold"
+        },
+        {
+            "name" : "Hamburga",
+            "address" :"Adrogue, Buenos Aires",
+            "phoneNumber" : 1142941373,
+            "website" : "http://www.hamburga.com.ar/",
+            "icon" : "https://www.hamburga.com.ar/assets/images/home/logo-slider2.png",
+            "membershipLevel" : "Silver"
+        },
+        {
+            "name" : "La Veneciana",
+            "address" : "Banfield, Buenos Aires",
+            "phoneNumber" : 1142426323,
+            "website" : "http://www.laveneciana.com.ar/",
+            "icon" : "https://scontent-eze1-1.xx.fbcdn.net/v/t39.30808-6/358711310_657841869712183_6019523772459603604_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_ohc=E0DZflk5wHkAX8Aq2HN&_nc_ht=scontent-eze1-1.xx&oh=00_AfC0b2Cg4d75g_rTEwJI1HkNnGQrpBBsKT_boRnIKhUakg&oe=6532169D",
+            "membershipLevel" : "Bronze"
+        },
+        {
+            "name" : "Cafe Martinez",
+            "address" : "Lomas de Zamora, Buenos Aires",
+            "phoneNumber" : 1164918158,
+            "website" : "http://www.cafemartinez.com/",
+            "icon" : "https://centrofranchising.com/wp-content/uploads/2018/01/CAFE-MARTINEZ-Franquicias-LOGO.png",
+            "membershipLevel" : "Bronze"
+        },
+        {
+            "name" : "Pacifico Galleries",
+            "address" : "City of Buenos Aires, Buenos Aires",
+            "phoneNumber" : 1155555110,
+            "website" : "http://www.galeriaspacifico.com.ar/",
+            "icon" : "https://upload.wikimedia.org/wikipedia/commons/e/e5/Galerias_pacifico_logo.png",
+            "membershipLevel" : "Gold"
+        }
+    ]
+}
