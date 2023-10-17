@@ -1,0 +1,24 @@
+{
+    "familyName" : "Rosales",
+    "dateTheFamliyMovedIn" : 15072023,
+    "numberOfFamilyMembers" : 3,
+    "vistedByBishopric" : true,
+    "familyMembers" : [
+        {
+            "name" : "Angelica",
+            "gender" : "female",
+            "birthDate" : "12 of May of 1975"
+        },
+        {
+            "name" : "Jose",
+            "gender" : "male",
+            "birthDate" : "28 of July of 1970"
+        },
+        {
+            "name" : "Neemias",
+            "gender" : "male",
+            "birthDate" : "25 of January of 2004"
+        }
+
+    ]
+}
