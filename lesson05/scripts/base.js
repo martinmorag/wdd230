@@ -11,13 +11,16 @@ window.addEventListener('load', () => {
 });
 
 theButton.addEventListener('click', () => {
-    const chapter = placement.value
-    if (chapter !== '') {
-        addChapter(chapter);
+    const input = placement.value.trim();
+    const regex = /^([^0-9]+)([0-9]+)$/; 
+
+    if (regex.test(input)) {
+        const [, text, number] = input.match(regex);
+        addChapter(text, parseInt(number, 10));
         placement.value = '';
     } else {
         const messageLi = document.createElement('li');
-        messageLi.textContent = 'Please insert your favorite chapter of the Book of Mormon';
+        messageLi.textContent = 'Please insert your favorite book of the Book of Mormon followed by a chapter';
         theList.appendChild(messageLi);
         setTimeout(() => {
             theList.removeChild(messageLi);
@@ -25,12 +28,10 @@ theButton.addEventListener('click', () => {
     }
 });
 
-
-
 /* function to save and remove chapters */
-function addChapter(chapterName) {
+function addChapter(chapterName, chapterNumber) {
     const li = document.createElement('li');
-    li.textContent = chapterName;
+    li.textContent = `${chapterName} - Chapter ${chapterNumber}`;
 
     const deleteButton = document.createElement('button');
     deleteButton.textContent = '❌';
