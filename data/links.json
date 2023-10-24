@@ -1,0 +1,52 @@
+{
+    "weeks" : [
+        {
+            "week" : "Lesson 2",
+            "links" : [
+                { 
+                    "url" : "https://martinmorag.github.io/wdd230//lesson1/media-query.html",
+                    "title" : "Media Query"
+                },
+                {
+                    "url" : "https://martinmorag.github.io/wdd230//lesson2/design-principles.html",
+                    "title" : "Design Principles Document"
+                }
+            ]
+        },
+        {    
+            "week" : "Lesson 3",
+            "links" : [
+                { 
+                    "url" : "https://martinmorag.github.io/wdd230//lesson03/images/w3school-combinators.png",
+                    "title" : "Combinators"
+                },
+                {
+                    "url" : "https://codepen.io/martinmoraga/pen/zYyEbXb",
+                    "title" : "CSS Pseudo Elements"
+                },
+                {
+                    "url" : "https://codepen.io/martinmoraga/pen/vYveMjJ",
+                    "title" : "'Hamburger'"
+                }
+            ]
+        },
+        {
+            "week" : "Lesson 4",
+            "links" : [
+                { 
+                    "url" : "https://codepen.io/martinmoraga/pen/ZEVobyG",
+                    "title" : "CSS Pseudo Classes"
+                }
+            ]
+        },
+        {
+            "week" : "Lesson 5",
+            "links" : [
+                { 
+                    "url" : "https://martinmorag.github.io/wdd230//lesson05/landscape.webp",
+                    "title" : "WebP"
+                }
+            ]
+        }
+    ]
+}
