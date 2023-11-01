@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <meta name="author" content="Martin Marcelo Morag Lopez">
+    <meta name="description" content="This is the website where I will have my form for this course">
+
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/form.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <img src="images/profile-picture.webp" alt="me">
+        <h1>Martin Moraga</h1>
+    </header>
+    <nav class="navigation">
+        <button id="menu-toggle">☰</button>
+        <ul>
+          <li><a href="https://martinmorag.github.io/wdd230/" class="active">Home</a></li>
+          <li><a href="https://martinmorag.github.io/wdd230//lesson03/chamber-site-plan.html">Site Plan</a></li>
+          <li><a href="https://martinmorag.github.io/wdd230/chamber/index.html">Chamber</a></li>
+          <li><a href="https://www.byui.edu/" target=”_blank”>BYU-Idaho</a></li>
+          <li><a href="https://www.churchofjesuschrist.org/study/scriptures">Scripture</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div id="formmessage"></div>
+        <h2>Course Form</h2>
+        <form method="get">
+            <fieldset>
+                <legend class="info">Guest Information</legend>
+                <label class="top required">Username* <input type="text" id="username" name="username" required></label>
+                <label class="top required">Password* <input type="password" id="password" name="password" pattern="[A-Za-z0-9]{8,}" title="Password must be at least 8 characters and contain only alphanumeric characters" required></label>
+                <label class="top required">Repeat Password* <input type="password" id="password2" name="password2" required></label>
+                <label class="top required">Email* <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address" required></label>
+            </fieldset>
+            <fieldset>
+                <legend class="page_rating">Page Rating</legend>
+                <div class="top" id="rangevalue">0</div>
+                <label class="top">
+                <input type="range" id="rating" name="range" min="1" max="10" value="1" step="1" list="rangevalues">
+                <datalist id="rangevalues">
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+                </datalist>
+                </label>
+            </fieldset>
+            <input type="submit" value="Register" class="submitButton">
+        </form>
+    </main>
+    <footer>
+        <p>
+          &copy; <span id="currentYear"></span>  
+          Martin Moraga
+          Argentina
+        </p>
+        <p>Last Modification: <span id="lastModified"></span></p>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+</body>
+</html>
