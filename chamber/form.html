@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <meta name="author" content="Martin Marcelo Morag Lopez">
+    <meta name="description" content="This is the website where I will have my form for this course">
+
+    <link href="styles/normalize.css" rel="stylesheet">
+    <link href="styles/form.css" rel="stylesheet">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <div>
+        <button id="dark">🌓</button>
+        <nav>
+            <button id="menu"></button>
+            <ul class="navigation">
+                <li><a href="https://martinmorag.github.io/wdd230/chamber/index.html" title="Home" class="home">Home</a></li>
+                <li><a href="#" title="Discover" class="contact-us">Discover</a></li>
+                <li><a href="#" title="Form" class="more">Form</a></li>
+            </ul>
+        </nav>
+        </div>
+    </header>
+    <main>
+        <h1>Membership for the Chamber of Commerce of the City of Buenos Aires</h1>
+        <form method="get" action="thankyou.html">
+            <fieldset>
+                <legend class="info">Applicant's Information</legend>
+                <label class="top" id="required">First Name* <input type="text" id="fname" name="fname" required></label>
+                <label class="top" id="required">Last Name* <input type="text" id="lname" name="lname" required></label>
+                <label class="top" id="required">Title of Position <input type="text" id="position" name="position" pattern="[A-Za-z -]{7,}" title="Please enter at least seven characters consisting of letters, hyphens, and spaces"></label>
+                <label class="top" id="required">Email Address* <input type="email" id="email" name="email" placeholder="someone@gmail.com" required></label>
+                <label class="top" id="required">Mobile Phone Number* <input type="tel" id="phone" name="phone" required></label>
+                <label class="top" id="required">Business/Organization's Name* <input type="text" id="business" name="business" required></label>
+            </fieldset>
+            <fieldset>
+                <legend class="membership">Membership</legend>
+                <div class="top">Membership Level</div>
+                <label class="sbs"><input type="radio" name="membership" value="np"> NP Membership is for non profit organizations and there is no fee</label>
+                <label class="sbs"><input type="radio" name="membership" value="bronze"> Bronze Membership</label>
+                <label class="sbs"><input type="radio" name="membership" value="silver"> Silver Membership</label>
+                <label class="sbs"><input type="radio" name="membership" value="gold"> Gold Membership</label>
+                <label class="sbs" id="bo_description" for="description">Business/Organization's Description</label>
+                <div id="box">
+                    <textarea class="sbs" id="description" name="description" rows="5" cols="25"></textarea>
+                </div>
+            </fieldset>
+            <input type="hidden" name="timestamp" id="timestamp">
+            <input type="submit" value="Join the Chamber of Commerce" class="submitButton">
+        </form>
+    </main>
+    <footer>
+        <div class="first">
+            <p>Martin Marcelo Moraga Lopez</p>
+            <p>"Chamber of Commerce" a WDD 230 project</p>
+        </div>
+        <div class="second">
+            <p>Last Modification: <span id="lastModified"></span></p>
+        </div>
+    </footer>
+    <script src="scripts/getdates.js"></script>
+</body>
+</html>
