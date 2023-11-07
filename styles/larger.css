@@ -139,7 +139,9 @@
         grid-row: 5 / 6;
         grid-column: 1 / 2;
         width: 95%;
+        height: auto;
         padding: 0;
+        border: 0;
     }
 
     main {
