@@ -127,7 +127,7 @@
         padding-bottom: 10px;
     }
 }
-@media screen and (min-width: 350px) and (max-width: 1000px) {
+@media screen and (min-width: 500px) and (max-width: 1000px) {
 
     :root {
         --border: #3C3744;
@@ -223,6 +223,157 @@
     }
     .submitButton {
         margin: 0 105% 3rem;
+    }
+    fieldset {
+        border: 2px solid var(--border);
+        border-radius: var(--radius);
+        font-size: var(--font);
+    }
+    .top {
+        display: block;
+        padding: .7rem 1rem .7rem;
+        font-size: var(--font2);
+    }
+    .top input {
+        display: block;
+        font-size: var(--font);
+        padding: .3rem;
+        border-radius: var(--radius2);
+        background-color: var(--border);
+        color: var(--letter);
+    }
+    #rangevalue {
+        padding-bottom: 0;
+    }
+    .submitButton {
+        padding: 1rem;
+        border-radius: var(--radius2);
+        background-color: var(--border);
+        color: var(--letter);
+        font-size: var(--font2);
+    } 
+    form label.top input:required {
+        border-left: red solid 6px;
+    }
+    form label.top input:required:valid {
+        border-left: green solid 6px;
+    }
+
+    /* FOOTER */
+    footer {
+        background-color: #B4C5E4;
+        height: auto;
+        margin: 0;
+        padding-top: 10px;
+        box-shadow: 0px 10px 20px rgba(0, 0, 0, 1); /* Adjust values to your preference */
+
+    }
+    footer p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+        margin: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+
+@media screen and (min-width: 350px) and (max-width: 500px) {
+
+    :root {
+        --border: #3C3744;
+        --radius: 5px;
+        --radius2: 3px;
+        --font: 1.20rem;
+        --font2: 1rem;
+        --letter: #B4C5E4;
+    }
+
+    body {
+        margin: 0;
+        font-family: "Poppins";
+        background-color: #B4C5E4;
+    }
+    /* HEADER */
+    header {
+        text-align: center;
+        display: flex;
+        height: 100%;
+        padding: 50px;
+        justify-content: center;
+        align-items: center;
+    }
+    header img {
+        height: auto;
+        width: 150px;
+        margin-right: 20px;
+    }
+    nav ul {
+        display: flex;
+        font-weight: lighter;
+        align-items: inherit;
+        justify-content: inherit;
+    }
+    nav a {
+        display: block;
+        text-align: center;
+        text-decoration: none;
+        padding-bottom: 13px;
+        padding-top: 10px;
+        background-color: #3C3744;
+        color: white;
+    }
+
+    #menu-toggle {
+        display: block;
+        background-color: transparent;
+        border: none;
+        font-size: 24px;
+        color: white;
+        cursor: pointer;
+        position: absolute; 
+        top: 1rem;
+        left: 1rem;
+    }
+
+    .navigation {
+        display: flex;
+        align-items: center; /* Vertically center content */
+        justify-content: center; /* Horizontally distribute content */
+        background-color: #3C3744;
+        position: relative;
+        padding-top: 3rem;
+        padding-bottom: .8rem;
+    }
+
+    nav li {
+        list-style-type: none;
+    }
+
+    nav ul {
+        display: none;
+        flex-direction: column;
+        text-align: center;
+    }
+    
+    nav ul.active {
+        display: flex;
+    }
+    /* Wayfinding Icon */
+
+    /* MAIN */
+    main {
+        height: 100%;
+    }
+    form fieldset {
+        margin: 2rem 3rem 2rem;
+    }
+    h2 {
+        margin: 2rem 4rem 0;
+    }
+    .submitButton {
+        margin: 0 4rem 3rem;
     }
     fieldset {
         border: 2px solid var(--border);
