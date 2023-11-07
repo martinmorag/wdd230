@@ -39,21 +39,9 @@
             </fieldset>
             <fieldset>
                 <legend class="page_rating">Page Rating</legend>
-                <div class="top" id="rangevalue">0</div>
+                <div class="top"><output id="value"></output></div>
                 <label class="top">
-                <input type="range" id="rating" name="range" min="1" max="10" value="1" step="1" list="rangevalues">
-                <datalist id="rangevalue">
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    <option value="5">5</option>
-                    <option value="6">6</option>
-                    <option value="7">7</option>
-                    <option value="8">8</option>
-                    <option value="9">9</option>
-                    <option value="10">10</option>
-                </datalist>
+                <input type="range" id="rating" name="range" min="1" max="10" value="1" step="1">
                 </label>
             </fieldset>
             <input type="submit" value="Register" class="submitButton">
