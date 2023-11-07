@@ -7,6 +7,46 @@ input.addEventListener("input", (event) => {
 });
 
 
+/* Hamburger */
+
+const menuToggle = document.getElementById('menu-toggle');
+const navUL = document.querySelector('.navigation ul');
+
+menuToggle.addEventListener('click', () => {
+  navUL.classList.toggle('active');
+});
+
+
+/* FORM re-enter password js */
+
+function validate_password() {
+ 
+            var pass = document.getElementById('password').value;
+            var confirm_pass = document.getElementById('password2').value;
+            if (pass != confirm_pass) {
+                document.getElementById('wrong_pass_alert').style.color = 'red';
+                document.getElementById('wrong_pass_alert').innerHTML
+                    = '☒ Use same password';
+                document.querySelector('.submitButton').disabled = true;
+                document.querySelector('.submitButton').style.opacity = (0.4);
+            } else {
+                document.getElementById('wrong_pass_alert').style.color = 'green';
+                document.getElementById('wrong_pass_alert').innerHTML =
+                    '🗹 Password Matched';
+                document.querySelector('.submitButton').disabled = false;
+                document.querySelector('.submitButton').style.opacity = (1);
+            }
+        }
+ 
+        function wrong_pass_alert() {
+            if (document.getElementById('password').value != "" &&
+                document.getElementById('password2').value != "") {
+                alert("Your response is submitted");
+            } else {
+                alert("Please fill all the fields");
+            }
+        }
+
 
 function formatDate(date) {
     const options = { year: 'numeric', month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: false };
@@ -61,25 +101,3 @@ const visitsElement = document.getElementById('visits'); // Assuming you have an
 visitsElement.textContent = `${totalVisits} times.`;
 
 
-
-
-/* FORM re-enter password js */
-const ps1 = document.querySelector("#password");
-const ps2 = document.querySelector("#password2");
-const message = document.querySelector("#formmessage");
-
-ps2.addEventListener("focusout", checkSame);
-
-function checkSame() {
-	if (ps1.value !== ps2.value) {
-		message.textContent = "❗Key Phrases DO NOT MATCH!";
-		message.style.visibility = "show";
-		ps2.style.backgroundColor = "#fff0f3";
-		ps2.value = "";
-		ps2.focus();
-	} else {
-		message.style.display = "none";
-		ps2.style.backgroundColor = "#fff";
-		ps2.style.color = "#000";
-	}
-}
