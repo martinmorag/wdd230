@@ -1,3 +1,13 @@
+// RANGE event listener
+const value = document.querySelector("#value");
+const input = document.querySelector("#rating");
+value.textContent = input.value;
+input.addEventListener("input", (event) => {
+  value.textContent = event.target.value;
+});
+
+
+
 function formatDate(date) {
     const options = { year: 'numeric', month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: false };
     return date.toLocaleDateString(undefined, options);
@@ -72,16 +82,4 @@ function checkSame() {
 		ps2.style.backgroundColor = "#fff";
 		ps2.style.color = "#000";
 	}
-}
-
-/* RATING OPTION IN FORM */
-const rangevalue = document.getElementById("rangevalue");
-const range = document.getElementById("rating");
-
-// RANGE event listener
-range.addEventListener('change', displayRatingValue);
-range.addEventListener('input', displayRatingValue);
-
-function displayRatingValue() {
-    rangevalue.innerHTML = range.value;
 }
