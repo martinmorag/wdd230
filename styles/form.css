@@ -68,10 +68,10 @@
         margin: 5rem 0 5rem;
     }
     h2 {
-        margin: 4rem 1rem 0;
+        margin: 4rem 4rem 0;
     }
     .submitButton {
-        margin: 0 1rem 2rem;
+        margin: 0 4rem 2rem;
     }
     fieldset {
         border: 2px solid var(--border);
@@ -219,10 +219,10 @@
         margin: 2rem 100% 2rem;
     }
     h2 {
-        margin: 2rem 105% 0;
+        margin: 2rem 135% 0;
     }
     .submitButton {
-        margin: 0 105% 3rem;
+        margin: 0 135% 3rem;
     }
     fieldset {
         border: 2px solid var(--border);
@@ -370,10 +370,10 @@
         margin: 2rem 3rem 2rem;
     }
     h2 {
-        margin: 2rem 4rem 0;
+        margin: 2rem 9.5rem 0;
     }
     .submitButton {
-        margin: 0 4rem 3rem;
+        margin: 0 9.5rem 3rem;
     }
     fieldset {
         border: 2px solid var(--border);
