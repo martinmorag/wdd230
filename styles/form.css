@@ -62,16 +62,16 @@
     /* MAIN */
     main {
         height: 100%;
-        margin: 0 15rem 0;
+        margin: 0 40% 0;
     }
     form fieldset {
-        margin: 2rem;
+        margin: 5rem 0 5rem;
     }
     h2 {
-        margin: 2rem 2rem 0;
+        margin: 4rem 1rem 0;
     }
     .submitButton {
-        margin: 0 2rem 2rem;
+        margin: 0 1rem 2rem;
     }
     fieldset {
         border: 2px solid var(--border);
@@ -213,16 +213,16 @@
     /* MAIN */
     main {
         height: 100%;
-        
+        width: 35%;
     }
     form fieldset {
-        margin: 2rem;
+        margin: 2rem 100% 2rem;
     }
     h2 {
-        margin: 2rem 2rem 0;
+        margin: 2rem 105% 0;
     }
     .submitButton {
-        margin: 0 2rem 2rem;
+        margin: 0 105% 3rem;
     }
     fieldset {
         border: 2px solid var(--border);
