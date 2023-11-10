@@ -127,7 +127,7 @@
     #images img {
         margin: 0 auto;
     }
-    p {
+    caption {
         width: 50%;
         margin: 0 auto;
         padding: 1rem;
@@ -136,7 +136,7 @@
         font-size: 2rem;
     }
     /* special effect on images */
-    .hover:hover {filter: blur(1px) grayscale(50%);}
+    .hover:hover {box-shadow: 0 0 20px #333;}
 
     
     
