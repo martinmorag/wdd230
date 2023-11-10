@@ -11,6 +11,10 @@
     a {
         text-decoration: none;
     }
+    /* hamburger menu*/
+    #menu {
+        display: none;
+    }
     /* dark mode button */
     #dark {
         border-color: transparent;
