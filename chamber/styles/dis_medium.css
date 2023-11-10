@@ -24,25 +24,24 @@
     /* HEADER */
     header {
         background-color: #0B132B;
-        margin: 0;
-        height: 4rem;
-    }
-    #menu {
-        display: none;
+        display: flex;
+        justify-content: flex-start;
     }
     .navigation {
         display: flex;
-        padding: 1.5rem;
+        padding: .5rem;
         list-style: none;
     }
     .navigation a {
         text-decoration: none;
-        margin-right: 2rem;
         margin-left: 2rem;
         color: #E6E8E6;
     }
     header ul {
         margin: 0;
+    }
+    header a {
+        font-size: 1.1rem;
     }
     /* MAIN */
     
