@@ -60,10 +60,11 @@
         margin: 1rem;
         border: 5px groove #0B132B;
         max-height: 100%;
-        margin-top: 5rem;
+        margin-top: 7rem;
+        margin-left: 2rem;
     }
     #sidebar h3 {
-        font-size: 4rem;
+        font-size: 2rem;
         padding: 2rem;
     }
     /* EXPO */
