@@ -61,7 +61,8 @@
         border: 5px groove #0B132B;
         max-height: 80%;
         margin-top: 7rem;
-        margin-left: 4rem;
+        margin-left: 3rem;
+        width: 250px;
     }
     #sidebar h3 {
         font-size: 2rem;
@@ -84,6 +85,8 @@
         margin: 0 auto;
         padding-top: 1rem;
         padding-bottom: 1rem;
+        width: 200px;
+        height: auto;
     }
     /* PURPOSE */
     .purpose {
