@@ -1,49 +1,3 @@
-
-
-
-/* FORM re-enter password js 
-
-function validate_password() {
- 
-            var pass = document.getElementById('password').value;
-            var confirm_pass = document.getElementById('password2').value;
-            if (pass != confirm_pass) {
-                document.getElementById('wrong_pass_alert').style.color = 'red';
-                document.getElementById('wrong_pass_alert').innerHTML
-                    = '☒ Use same password';
-                document.querySelector('.submitButton').disabled = true;
-                document.querySelector('.submitButton').style.opacity = (0.4);
-            } else {
-                document.getElementById('wrong_pass_alert').style.color = 'green';
-                document.getElementById('wrong_pass_alert').innerHTML =
-                    '🗹 Password Matched';
-                document.querySelector('.submitButton').disabled = false;
-                document.querySelector('.submitButton').style.opacity = (1);
-            }
-        }
- 
-        function wrong_pass_alert() {
-            if (document.getElementById('password').value != "" &&
-                document.getElementById('password2').value != "") {
-                alert("Your response is submitted");
-            } else {
-                alert("Please fill all the fields");
-            }
-        }   */
-
-
-
-/* Hamburger */
-
-const menuToggle = document.getElementById('menu-toggle');
-const navUL = document.querySelector('.navigation ul');
-
-menuToggle.addEventListener('click', () => {
-  navUL.classList.toggle('active');
-});
-
-
-
 function formatDate(date) {
     const options = { year: 'numeric', month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: false };
     return date.toLocaleDateString(undefined, options);
@@ -97,3 +51,70 @@ const visitsElement = document.getElementById('visits'); // Assuming you have an
 visitsElement.textContent = `${totalVisits} times.`;
 
 
+
+
+/* WEATHER */
+
+const currentTemp = document.querySelector('#current-temp');
+const weatherIcon = document.querySelector('#weather-icon');
+const captionDesc = document.querySelector('figcaption');
+const url = 'https://api.openweathermap.org/data/2.5/weather?lat=-28.05&lon=-56.01&appid=632ffff2d8b50ca68b2810a13cf768e0&units=metric';
+
+async function apiFetch() {
+    try {
+        const response = await fetch(url);
+        if (response.ok) {
+            const data = await response.json();
+            displayResults(data);
+        } else {
+            throw Error (await response.text());
+        }
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+apiFetch();
+
+
+function displayResults(data) {
+    currentTemp.innerHTML = `${data.main.temp}&deg;C`;
+    const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+    let desc = data.weather[0].description;
+    weatherIcon.setAttribute('src', iconsrc);
+    weatherIcon.setAttribute('alt', 'Weather Icon');
+    captionDesc.textContent = desc;
+}
+
+
+
+/* LINKS */
+
+const baseUrl = 'https://martinmorag.github.io/wdd230/';
+const linksUrl = 'https://martinmorag.github.io/wdd230/data/links.json'
+
+async function getLinks() {
+    const response = await fetch(linksUrl);
+    const data = await response.json();
+    displayLinks(data);
+}
+  
+getLinks();
+
+function displayLinks(data) {
+   let weeks = document.querySelectorAll('.week');
+   weeks[0].setAttribute('href', data.weeks[0].links[0].url);
+   weeks[0].textContent = ` ${data.weeks[0].links[0].title} `;
+   weeks[1].setAttribute('href', data.weeks[0].links[1].url);
+   weeks[1].textContent = ` ${data.weeks[0].links[1].title} `;
+   weeks[2].setAttribute('href', data.weeks[1].links[0].url);
+   weeks[2].textContent = ` ${data.weeks[1].links[0].title} `;
+   weeks[3].setAttribute('href', data.weeks[1].links[1].url);
+   weeks[3].textContent = ` ${data.weeks[1].links[1].title} `;
+   weeks[4].setAttribute('href', data.weeks[1].links[2].url);
+   weeks[4].textContent = ` ${data.weeks[1].links[2].title} `;
+   weeks[5].setAttribute('href', data.weeks[2].links[0].url);
+   weeks[5].textContent = ` ${data.weeks[2].links[0].title} `;
+   weeks[6].setAttribute('href', data.weeks[3].links[0].url);
+   weeks[6].textContent = ` ${data.weeks[3].links[0].title} `;
+}
