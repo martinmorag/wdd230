@@ -1,8 +1,4 @@
 /* RATING OPTION IN FORM */
-const rangevalue = document.getElementById("rangevalue");
-const range = document.getElementById("rating");
-
-// RANGE event listener
 function updateRating(value) {
 	document.getElementById('value').innerHTML = value;
   }
