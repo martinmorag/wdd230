@@ -27,8 +27,7 @@
             <ul class="navigation">
                 <li><a href="https://martinmorag.github.io/wdd230/chamber/index.html" title="Home" class="home">Home</a></li>
                 <li><a href="https://martinmorag.github.io/wdd230/chamber/discover.html" title="discover" class="discover">Discover</a></li>
-                <li><a href="https://martinmorag.github.io/wdd230/chamber/join.html" title="join" class="join_link">Join</a></li>
-                <li><a href="https://martinmorag.github.io/wdd230/chamber/directory.html" title="Directory" class="directory">Directory</a></li>
+                <li><a href="#" title="More" class="more">More</a></li>
             </ul>
         </nav>
     </header>
@@ -45,31 +44,37 @@
             </button>
         </div>
 
-        <section class="item event">
-            <h3 class="subsection">Events</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis, molestias?</p>
-            <a href="#">More info</a>
-        </section>
         <section class="item weather">
             <h3>Weather</h3>
             <p>Temperature: <input type="number" name="temperature" class="temperature"></p>
             <p>Windspeed: <input type="number" name="windspeed" class="windspeed"></p>
             <p>Wind Chill: <span class="windchill"></span></p>
         </section>
-        <section class="item spotlight">
-            <div class="first_review">
-                <h4>Excellent Service</h4>
-                <p>Really happy about my experience there!</p>
-                <a href="#">myemail@yahoo.com</a>
-                <p>+999-999-999</p>
+        <div class="first_review">
+            <div class="member">
+                <p class="member_name"></p>
+                <img class="member_image">
+                <p class="membership"></p>
             </div>
-            <div class="second_review">
-                <h4>Learned a lot</h4>
-                <p>My school trip to learn more about the Chamber of Commerce was amazing! Now I understand more about how it works.</p>
-                <a href="#">myemail@yahoo.com</a>
-                <p>+999-999-999</p>
+            <div class="member">
+                <p class="member_name"></p>
+                <img class="member_image">
+                <p class="membership"></p>
             </div>
-        </section>
+        </div>
+        <div class="second_review">
+            <p>The current temperature in Buenos Aires, Argentina is <span id="current-temp"></span></p>
+            <figure>
+                <img id="weather-icon" src="" alt="">
+                <figcaption></figcaption>
+                <ul id="forecast-list"></ul>
+            </figure>
+        </div>
+        
+        <div id="banner" class="item banner">
+            <img class="back" src="images/business.webp" alt="Business Background">
+            <h3>You are cordailly invited to our annual chamber of commerce meet and greet on Wednesday at 7:00 p.m.!<span id="closeBanner">❌</span></h3>
+        </div>
     </main>
     <footer>
         <div class="first">
@@ -81,6 +86,6 @@
         </div>
     </footer>
     <script src="scripts/base.js"></script>
-    <script src="scripts/windchill.js"></script>    
+    <script src="scripts/windchill.js"></script>
 </body>
 </html>
