@@ -357,7 +357,7 @@
         text-align: center;
     }
     
-    navigation.active ul {
+    .navigation.active ul {
         display: flex;
         flex-direction: column;
         text-align: center;
