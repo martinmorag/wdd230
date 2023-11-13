@@ -118,3 +118,13 @@ function displayLinks(data) {
    weeks[6].setAttribute('href', data.weeks[3].links[0].url);
    weeks[6].textContent = ` ${data.weeks[3].links[0].title} `;
 }
+
+
+/* Hamburger */
+
+const menuToggle = document.getElementById('menu-toggle');
+const navUL = document.querySelector('.navigation ul');
+
+menuToggle.addEventListener('click', () => {
+  navUL.classList.toggle('active');
+});
