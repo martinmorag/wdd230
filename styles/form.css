@@ -57,6 +57,15 @@
     nav {
         box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3); /* Adjust values to your preference */
     }
+    .navigation ul {
+    display: none;
+    }
+
+    .navigation.active ul {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    }
     /* Wayfinding Icon */
 
     /* MAIN */
@@ -205,8 +214,14 @@
         text-align: center;
     }
     
-    nav ul.active {
-        display: flex;
+    .navigation ul {
+    display: none;
+    }
+
+    .navigation.active ul {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
     }
     /* Wayfinding Icon */
 
@@ -357,10 +372,14 @@
         text-align: center;
     }
     
-    nav.navigation.active {
-        display: flex;
-        flex-direction: column;
-        text-align: center;
+    .navigation ul {
+      display: none;
+    }
+
+    .navigation.active ul {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
     }
     /* Wayfinding Icon */
 
