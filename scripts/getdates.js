@@ -1,7 +1,7 @@
 /* RATING OPTION IN FORM */
 function updateRating(value) {
 	document.getElementById('value').innerHTML = value;
-  }
+}
 
 
 /* FORM re-enter password js */
