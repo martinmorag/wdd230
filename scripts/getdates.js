@@ -1,20 +1,14 @@
+/* RATING OPTION IN FORM */
+const rangevalue = document.getElementById("rangevalue");
+const range = document.getElementById("rating");
+
 // RANGE event listener
-const value = document.querySelector("#value");
-const input = document.querySelector("#rating");
-value.textContent = input.value;
-input.addEventListener("input", (event) => {
-  value.textContent = event.target.value;
-});
+range.addEventListener('change', displayRatingValue);
+range.addEventListener('input', displayRatingValue);
 
-
-/* Hamburger */
-
-const menuToggle = document.getElementById('menu-toggle');
-const navUL = document.querySelector('.navigation ul');
-
-menuToggle.addEventListener('click', () => {
-  navUL.classList.toggle('active');
-});
+function displayRatingValue() {
+    rangevalue.innerHTML = range.value;
+}
 
 
 /* FORM re-enter password js */
@@ -46,6 +40,18 @@ function validate_password() {
                 alert("Please fill all the fields");
             }
         }
+
+
+
+/* Hamburger */
+
+const menuToggle = document.getElementById('menu-toggle');
+const navUL = document.querySelector('.navigation ul');
+
+menuToggle.addEventListener('click', () => {
+  navUL.classList.toggle('active');
+});
+
 
 
 function formatDate(date) {
