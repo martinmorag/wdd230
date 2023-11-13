@@ -40,9 +40,9 @@
             </fieldset>
             <fieldset id="the_rating">
                 <legend class="page_rating">Page Rating</legend>
-                <div class="top"><output id="value"></output></div>
+                <div class="top"><output id="value">1</output></div>
                 <label class="top">
-                <input type="range" id="rating" name="range" min="1" max="10" value="1" step="1">
+                  <input type="range" id="rating" name="range" min="1" max="10" value="1" step="1" oninput="updateRating(this.value)">
                 </label>
             </fieldset>
             <input type="submit" value="Register" class="submitButton" onclick="wrong_pass_alert()">
