@@ -357,7 +357,7 @@
         text-align: center;
     }
     
-    .navigation active {
+    nav.navigation.active {
         display: flex;
         flex-direction: column;
         text-align: center;
