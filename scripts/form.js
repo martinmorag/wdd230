@@ -25,3 +25,12 @@ function checkSame() {
 }
 
 
+/* Hamburger */
+
+const menuToggle = document.getElementById('menu-toggle');
+const navUL = document.querySelector('.navigation');
+
+menuToggle.addEventListener('click', () => {
+  navUL.classList.toggle('active');
+});
+
