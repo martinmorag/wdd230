@@ -1,5 +1,4 @@
 
-
 @media screen and (min-width: 1024px) {
     
     
@@ -77,15 +76,16 @@
     }
 
     main {
-        max-height: 1500px;
+        max-height: 2000px;
         display: grid;
         grid-template-areas:
             "title"
             "hero"
-            "event  weather"
-            "spotlight";
-        grid-template-columns: 2fr 1fr;
-        grid-template-rows: 100px auto 200px 250px;
+            "first  weather"
+            "first   second"
+            "banner";
+        grid-template-columns: 1.5fr 1fr;
+        grid-template-rows: 100px auto 500px 350px 300px;
         align-items: center;
         justify-items: center;
         gap: 10px;
@@ -105,18 +105,25 @@
     .event a, .weather a, .spotlight a {
         color: rgb(175, 241, 219);
     }
-    .event {
-        grid-area: event;
-        grid-row: 3 / 4;
+    .first_review {
+        grid-area: first;
+        grid-row: 3 / 5;
         grid-column: 1 / 2;
         background-color: #0B132B;
         opacity: .8;
         color: #f4faf4;
-        padding: 2rem;
+        margin: 2rem 20rem 2rem 2rem;
+        padding: 1.5rem;
         padding-left: 4rem;
         padding-right: 4rem;
         border-radius: 7px;
-        height: 75%;
+        text-align: center;
+        
+    }
+    .second_review {
+        grid-area: second;
+        grid-row: 4 / 5;
+        grid-column: 2 / 3;
     }
     .weather {
         grid-area: weather;
@@ -127,25 +134,65 @@
         color: #f4faf4;
         padding: .5rem 2rem 1rem;
         border-radius: 7px;
-        height: 100%;
+        height: 50%;
     }
-    .spotlight {
-        display: flex;
-        grid-area: spotlight;
-        grid-row: 4 / 5;
-        grid-column: 1 / 3;
-        padding: 2rem;
-    }
-    .first_review, .second_review {
+    .second_review {
         background-color: #0B132B;
         opacity: .8;
         color: #f4faf4;
         font-size: 1.1rem;
-        height: 70%;
+        height: 15rem;
         padding: 1rem;
         margin: .5rem;
         text-align: center;
         border-radius: 7px;
+    }
+    .member_name {
+        font-weight: bolder;
+        padding: 1.5rem;
+        font-size: 2rem;
+    }
+    .member_image {
+        width: 225px;
+        height: auto;
+    }
+    .membership {
+        background: #b38600;
+        color: white;
+        font-weight: bold;
+        border-radius: 10px;
+        margin-bottom: 2rem;
+    }
+    #forecast-list {
+        list-style-type: none;
+        padding-right: 2.5rem;
+    }
+    .back {
+        grid-area: banner;
+        grid-row: 5 / 6;
+        grid-column: 1 / 3;
+        position: relative;
+        opacity: .5;
+        z-index: 0;
+        width: 1350px;
+        height: auto;
+        border-radius: 20px;
+    }
+    .banner {
+        grid-area: banner;
+        grid-row: 5 / 6;
+        grid-column: 1 / 3;
+        z-index: 1;
+    }
+    .banner h3 {
+        position: absolute;
+        font-family: 'Young Serif';
+        font-weight: lighter;
+        top: 208%;
+        left: 12%;
+    }
+    #closeBanner {
+        cursor: pointer;
     }
     /* FOOTER */
     footer {
