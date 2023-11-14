@@ -36,7 +36,7 @@ menuToggle.addEventListener('click', () => {
 
 document.addEventListener('DOMContentLoaded', function () {
     var menuToggle = document.getElementById('menu-toggle');
-    var mainNav = document.getElementById('main-nav');
+    var mainNav = document.querySelector('.navigation');
 
     // Add click event listener to the toggle button
     menuToggle.addEventListener('click', function () {
