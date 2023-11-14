@@ -34,15 +34,11 @@ menuToggle.addEventListener('click', () => {
   navUL.classList.toggle('active');
 });  */
 
-document.addEventListener('DOMContentLoaded', function () {
-    var menuToggle = document.getElementById('menu-toggle');
-    var mainNav = document.querySelector('.navigation');
 
-    // Add click event listener to the toggle button
-    menuToggle.addEventListener('click', function () {
-        // Toggle the 'active' class on the main navigation
-        mainNav.classList.toggle('active');
-    });
+const menuToggle = document.getElementById('menu-toggle');
+const navUL = document.querySelector('.navigation ul');
+
+menuToggle.addEventListener('click', () => {
+  navUL.classList.toggle('active');
 });
-
 
