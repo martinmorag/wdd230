@@ -180,6 +180,9 @@
         color: white;
         font-size: 18px;
     }
+    nav li {
+        list-style-type: none;
+    }
     nav {
         box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3); /* Adjust values to your preference */
     }
