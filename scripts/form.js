@@ -25,13 +25,24 @@ function checkSame() {
 }
 
 
-/* Hamburger */
+/* Hamburger 
 
 const menuToggle = document.getElementById('menu-toggle');
 const navUL = document.querySelector('.navigation');
 
 menuToggle.addEventListener('click', () => {
   navUL.classList.toggle('active');
+});  */
+
+document.addEventListener('DOMContentLoaded', function () {
+    var menuToggle = document.getElementById('menu-toggle');
+    var mainNav = document.getElementById('main-nav');
+
+    // Add click event listener to the toggle button
+    menuToggle.addEventListener('click', function () {
+        // Toggle the 'active' class on the main navigation
+        mainNav.classList.toggle('active');
+    });
 });
 
 
