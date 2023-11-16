@@ -1,3 +1,39 @@
+/* WEATHER */
+
+const currentTemp = document.querySelector('#current-temp');
+const weatherIcon = document.querySelector('#weather-icon');
+const captionDesc = document.querySelector('figcaption');
+const url = 'https://api.openweathermap.org/data/2.5/weather?lat=-28.05&lon=-56.01&appid=632ffff2d8b50ca68b2810a13cf768e0&units=metric';
+
+async function apiFetch() {
+    try {
+        const response = await fetch(url);
+        if (response.ok) {
+            const data = await response.json();
+            displayResults(data);
+        } else {
+            throw Error (await response.text());
+        }
+    } catch (error) {
+        console.log(error);
+    }
+}
+
+apiFetch();
+
+
+function displayResults(data) {
+    currentTemp.innerHTML = `${data.main.temp}&deg;C`;
+    const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
+    let desc = data.weather[0].description;
+    weatherIcon.setAttribute('src', iconsrc);
+    weatherIcon.setAttribute('alt', 'Weather Icon');
+    captionDesc.textContent = desc;
+}
+
+
+
+
 function formatDate(date) {
     const options = { year: 'numeric', month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: false };
     return date.toLocaleDateString(undefined, options);
@@ -86,46 +122,5 @@ const totalVisits = localStorage.getItem('pageVisits');
 // Display the total number of visits on your webpage
 const visitsElement = document.getElementById('visits'); // Assuming you have an HTML element with id 'visits' to display the count
 visitsElement.textContent = `${totalVisits} times.`;
-
-
-
-
-/* WEATHER */
-
-const currentTemp = document.querySelector('#current-temp');
-const weatherIcon = document.querySelector('#weather-icon');
-const captionDesc = document.querySelector('figcaption');
-const url = 'https://api.openweathermap.org/data/2.5/weather?lat=-28.05&lon=-56.01&appid=632ffff2d8b50ca68b2810a13cf768e0&units=metric';
-
-async function apiFetch() {
-    try {
-        const response = await fetch(url);
-        if (response.ok) {
-            const data = await response.json();
-            displayResults(data);
-        } else {
-            throw Error (await response.text());
-        }
-    } catch (error) {
-        console.log(error);
-    }
-}
-
-apiFetch();
-
-
-function displayResults(data) {
-    currentTemp.innerHTML = `${data.main.temp}&deg;C`;
-    const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
-    let desc = data.weather[0].description;
-    weatherIcon.setAttribute('src', iconsrc);
-    weatherIcon.setAttribute('alt', 'Weather Icon');
-    captionDesc.textContent = desc;
-}
-
-
-
-
-
 
 
