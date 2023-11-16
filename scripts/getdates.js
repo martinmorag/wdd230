@@ -20,6 +20,41 @@ const currentYear = new Date().getFullYear();
 const currentYearElement = document.getElementById('currentYear');
 currentYearElement.textContent = currentYear;
 
+
+
+/* LINKS */
+
+const baseUrl = 'https://martinmorag.github.io/wdd230/';
+const linksUrl = 'https://martinmorag.github.io/wdd230/data/links.json'
+
+async function getLinks() {
+    const response = await fetch(linksUrl);
+    const data = await response.json();
+    displayLinks(data);
+}
+  
+getLinks();
+
+function displayLinks(data) {
+   let weeks = document.querySelectorAll('.week');
+   weeks[0].setAttribute('href', data.weeks[0].links[0].url);
+   weeks[0].textContent = ` ${data.weeks[0].links[0].title} `;
+   weeks[1].setAttribute('href', data.weeks[0].links[1].url);
+   weeks[1].textContent = ` ${data.weeks[0].links[1].title} `;
+   weeks[2].setAttribute('href', data.weeks[1].links[0].url);
+   weeks[2].textContent = ` ${data.weeks[1].links[0].title} `;
+   weeks[3].setAttribute('href', data.weeks[1].links[1].url);
+   weeks[3].textContent = ` ${data.weeks[1].links[1].title} `;
+   weeks[4].setAttribute('href', data.weeks[1].links[2].url);
+   weeks[4].textContent = ` ${data.weeks[1].links[2].title} `;
+   weeks[5].setAttribute('href', data.weeks[2].links[0].url);
+   weeks[5].textContent = ` ${data.weeks[2].links[0].title} `;
+   weeks[6].setAttribute('href', data.weeks[3].links[0].url);
+   weeks[6].textContent = ` ${data.weeks[3].links[0].title} `;
+}
+
+
+
 /* Hamburger */
 
 const menuToggle = document.getElementById('menu-toggle');
@@ -28,6 +63,8 @@ const navUL = document.querySelector('.navigation ul');
 menuToggle.addEventListener('click', () => {
   navUL.classList.toggle('active');
 });
+
+
 
 
 /* the number of visits */
@@ -88,43 +125,7 @@ function displayResults(data) {
 
 
 
-/* LINKS */
-
-const baseUrl = 'https://martinmorag.github.io/wdd230/';
-const linksUrl = 'https://martinmorag.github.io/wdd230/data/links.json'
-
-async function getLinks() {
-    const response = await fetch(linksUrl);
-    const data = await response.json();
-    displayLinks(data);
-}
-  
-getLinks();
-
-function displayLinks(data) {
-   let weeks = document.querySelectorAll('.week');
-   weeks[0].setAttribute('href', data.weeks[0].links[0].url);
-   weeks[0].textContent = ` ${data.weeks[0].links[0].title} `;
-   weeks[1].setAttribute('href', data.weeks[0].links[1].url);
-   weeks[1].textContent = ` ${data.weeks[0].links[1].title} `;
-   weeks[2].setAttribute('href', data.weeks[1].links[0].url);
-   weeks[2].textContent = ` ${data.weeks[1].links[0].title} `;
-   weeks[3].setAttribute('href', data.weeks[1].links[1].url);
-   weeks[3].textContent = ` ${data.weeks[1].links[1].title} `;
-   weeks[4].setAttribute('href', data.weeks[1].links[2].url);
-   weeks[4].textContent = ` ${data.weeks[1].links[2].title} `;
-   weeks[5].setAttribute('href', data.weeks[2].links[0].url);
-   weeks[5].textContent = ` ${data.weeks[2].links[0].title} `;
-   weeks[6].setAttribute('href', data.weeks[3].links[0].url);
-   weeks[6].textContent = ` ${data.weeks[3].links[0].title} `;
-}
 
 
-/* Hamburger */
 
-const menuToggle = document.getElementById('menu-toggle');
-const navUL = document.querySelector('.navigation ul');
 
-menuToggle.addEventListener('click', () => {
-  navUL.classList.toggle('active');
-});
