@@ -57,7 +57,7 @@ const currentYearElement = document.getElementById('currentYear');
 currentYearElement.textContent = currentYear;
 
 
-
+*/
 /* LINKS 
 
 const baseUrl = 'https://martinmorag.github.io/wdd230/';
@@ -89,7 +89,7 @@ function displayLinks(data) {
    weeks[6].textContent = ` ${data.weeks[3].links[0].title} `;
 }
 
-
+*/
 
 /* Hamburger 
 
@@ -102,7 +102,7 @@ menuToggle.addEventListener('click', () => {
 
 
 
-
+*/
 /* the number of visits 
 
 // Check if the 'pageVisits' key exists in localStorage
@@ -123,4 +123,4 @@ const totalVisits = localStorage.getItem('pageVisits');
 const visitsElement = document.getElementById('visits'); // Assuming you have an HTML element with id 'visits' to display the count
 visitsElement.textContent = `${totalVisits} times.`;
 
-
+*/
