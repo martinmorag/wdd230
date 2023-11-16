@@ -1,4 +1,4 @@
-@media screen and (max-width: 900px){
+@media screen and (max-width: 700px){
 
     header img {
         height: auto;
@@ -55,7 +55,7 @@
         display: grid;
         grid-template-rows: 2fr .9fr 3fr 1fr 1fr;
         grid-template-columns: 1fr;
-        max-height: 120rem;
+        max-height: 110rem;
         width: 100%;
         text-align: center;
         align-content: center;
