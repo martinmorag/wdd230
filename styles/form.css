@@ -105,7 +105,9 @@
     form label.top input:required:valid {
         border-left: green solid 6px;
     }
-
+    .error-message {
+        color: red;
+    }
     /* FOOTER */
     footer {
         background-color: #B4C5E4;
@@ -232,7 +234,9 @@
     form label.top input:required:valid {
         border-left: green solid 6px;
     }
-
+    .error-message {
+        color: red;
+    }
     /* FOOTER */
     footer {
         background-color: #B4C5E4;
@@ -380,7 +384,9 @@
     form label.top input:required:valid {
         border-left: green solid 6px;
     }
-
+    .error-message {
+        color: red;
+    }
     /* FOOTER */
     footer {
         background-color: #B4C5E4;
