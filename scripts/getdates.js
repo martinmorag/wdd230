@@ -32,7 +32,7 @@ function displayResults(data) {
 }
 
 
-
+/*
 
 function formatDate(date) {
     const options = { year: 'numeric', month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: false };
@@ -58,7 +58,7 @@ currentYearElement.textContent = currentYear;
 
 
 
-/* LINKS */
+/* LINKS 
 
 const baseUrl = 'https://martinmorag.github.io/wdd230/';
 const linksUrl = 'https://martinmorag.github.io/wdd230/data/links.json'
@@ -91,7 +91,7 @@ function displayLinks(data) {
 
 
 
-/* Hamburger */
+/* Hamburger 
 
 const menuToggle = document.getElementById('menu-toggle');
 const navUL = document.querySelector('.navigation ul');
@@ -103,7 +103,7 @@ menuToggle.addEventListener('click', () => {
 
 
 
-/* the number of visits */
+/* the number of visits 
 
 // Check if the 'pageVisits' key exists in localStorage
 if (localStorage.getItem('pageVisits') === null) {
