@@ -4,25 +4,30 @@ function updateRating(value) {
 
 
 /* FORM re-enter password js */
-const ps1 = document.querySelector("#password");
-const ps2 = document.querySelector("#password2");
-const message = document.querySelector("#formmessage");
+document.querySelector('form').addEventListener('submit', function (event) {
+      var password = document.getElementById('password').value;
+      var confirmPassword = document.getElementById('password2').value;
+      var passwordError = document.getElementById('passwordError');
 
-ps2.addEventListener("focusout", checkSame);
+      // Check if passwords match
+      if (password !== confirmPassword) {
+        passwordError.textContent = 'Passwords do not match.';
+        event.preventDefault(); // Prevent form submission
+      } else {
+        passwordError.textContent = '';
+      }
+});
 
-function checkSame() {
-	if (ps1.value !== ps2.value) {
-		message.textContent = "❗Key Phrases DO NOT MATCH!";
-		message.style.visibility = "show";
-		ps2.style.backgroundColor = "#fff0f3";
-		ps2.value = "";
-		ps2.focus();
-	} else {
-		message.style.display = "none";
-		ps2.style.backgroundColor = "#fff";
-		ps2.style.color = "#000";
-	}
-}
+document.getElementById('password').addEventListener('input', function () {
+      var validity = this.validity;
+
+      // Check if the input is valid
+      if (validity.patternMismatch) {
+        this.setCustomValidity('Password must contain at least 8 characters, including at least one letter and one number');
+      } else {
+        this.setCustomValidity('');
+      }
+});
 
 
 /* Hamburger 
