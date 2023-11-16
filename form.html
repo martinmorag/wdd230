@@ -36,7 +36,7 @@
                 <label class="top required">Username* <input type="text" id="username" name="username" required></label>
                 <label class="top required">Password* <input type="password" id="password" name="password" pattern="[A-Za-z0-9]{8,}" title="Password must be at least 8 characters and contain only alphanumeric characters" required></label>
                 <label class="top required">Repeat Password* <input type="password" id="password2" name="password2" onkeyup="validate_password()" required></label>
-                <span id="wrong_pass_alert"></span>
+                <p class="error-message" id="passwordError"></p>
                 <label class="top required">Email* <input type="email" id="email" name="email" pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address" required></label>
             </fieldset>
             <fieldset id="the_rating">
