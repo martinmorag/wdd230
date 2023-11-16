@@ -57,6 +57,10 @@
     nav {
         box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3); /* Adjust values to your preference */
     }
+    /* Wayfinding Icon */
+    nav a.active::before {
+        content: '📍';
+    }
     /* MAIN */
     main {
         height: 100%;
@@ -185,6 +189,10 @@
     
     nav {
         box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.3); /* Adjust values to your preference */
+    }
+    /* Wayfinding Icon */
+    nav a.active::before {
+        content: '📍';
     }
     /* MAIN */
     main {
@@ -336,7 +344,10 @@
     nav ul.active {
         display: flex;
     }
-    
+    /* Wayfinding Icon */
+    nav a.active::before {
+        content: '📍';
+    }
     /* MAIN */
     main {
         height: 100%;
