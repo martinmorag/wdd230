@@ -20,14 +20,18 @@ const currentYear = new Date().getFullYear();
 const currentYearElement = document.getElementById('currentYear');
 currentYearElement.textContent = currentYear;
 
-/* Hamburger */
 
-const menuToggle = document.getElementById('menu-toggle');
-const navUL = document.querySelector('.navigation ul');
 
-menuToggle.addEventListener('click', () => {
-  navUL.classList.toggle('active');
+// HAMBURGER MENU
+
+const hamButton = document.querySelector('#menu');
+const navigation = document.querySelector('.navigation');
+
+hamButton.addEventListener('click', () => {
+navigation.classList.toggle('open');
+hamButton.classList.toggle('open');
 });
+
 
 
 
