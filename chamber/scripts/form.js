@@ -30,60 +30,6 @@ menuToggle.addEventListener('click', () => {
 });
 
 
-/* the number of visits */
 
-// Check if the 'pageVisits' key exists in localStorage
-if (localStorage.getItem('pageVisits') === null) {
-  // If not, initialize it with a value of 1
-  localStorage.setItem('pageVisits', '1');
-} else {
-  // If it exists, increment the value by 1
-  let currentVisits = parseInt(localStorage.getItem('pageVisits'));
-  currentVisits++;
-  localStorage.setItem('pageVisits', currentVisits.toString());
-}
-
-// Get the updated total number of visits from localStorage
-const totalVisits = localStorage.getItem('pageVisits');
-
-// Display the total number of visits on your webpage
-const visitsElement = document.getElementById('visits'); // Assuming you have an HTML element with id 'visits' to display the count
-visitsElement.textContent = `${totalVisits} times.`;
-
-
-
-
-
-
-/* FORM re-enter password js */
-const ps1 = document.querySelector("#password");
-const ps2 = document.querySelector("#password2");
-const message = document.querySelector("#formmessage");
-
-ps2.addEventListener("focusout", checkSame);
-
-function checkSame() {
-	if (ps1.value !== ps2.value) {
-		message.textContent = "❗Key Phrases DO NOT MATCH!";
-		message.style.visibility = "show";
-		ps2.style.backgroundColor = "#fff0f3";
-		ps2.value = "";
-		ps2.focus();
-	} else {
-		message.style.display = "none";
-		ps2.style.backgroundColor = "#fff";
-		ps2.style.color = "#000";
-	}
-}
-
-/* RATING OPTION IN FORM */
-const rangevalue = document.getElementById("rangevalue");
-const range = document.getElementById("rating");
-
-// RANGE event listener
-range.addEventListener('change', displayRatingValue);
-range.addEventListener('input', displayRatingValue);
-
-function displayRatingValue() {
-    rangevalue.innerHTML = range.value;
-}
+// Set the value of the hidden timestamp field when the page loads
+document.getElementById('timestamp').value = new Date().toISOString();
