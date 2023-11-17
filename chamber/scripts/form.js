@@ -1,3 +1,15 @@
+// HAMBURGER MENU
+
+const hamButton = document.querySelector('#menu');
+const navigation = document.querySelector('.navigation');
+
+hamButton.addEventListener('click', () => {
+navigation.classList.toggle('open');
+hamButton.classList.toggle('open');
+});
+
+
+
 function formatDate(date) {
     const options = { year: 'numeric', month: 'numeric', day: 'numeric', hour: 'numeric', minute: 'numeric', second: 'numeric', hour12: false };
     return date.toLocaleDateString(undefined, options);
@@ -19,18 +31,6 @@ const currentYear = new Date().getFullYear();
 
 const currentYearElement = document.getElementById('currentYear');
 currentYearElement.textContent = currentYear;
-
-
-
-// HAMBURGER MENU
-
-const hamButton = document.querySelector('#menu');
-const navigation = document.querySelector('.navigation');
-
-hamButton.addEventListener('click', () => {
-navigation.classList.toggle('open');
-hamButton.classList.toggle('open');
-});
 
 
 
