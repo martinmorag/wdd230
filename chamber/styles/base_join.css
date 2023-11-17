@@ -1,0 +1,144 @@
+@media screen and (min-width: 700px) {
+
+    :root {
+        --border: #3C3744;
+        --radius: 5px;
+        --radius2: 3px;
+        --font: 1.20rem;
+        --font2: 1rem;
+        --letter: #B4C5E4;
+    }
+
+    body{
+        font-family: "DM Sans";
+        font-size: 1.3rem;
+        margin: 0;
+    }
+    a {
+        text-decoration: none;
+    }
+    /* hamburger menu*/
+    #menu {
+        display: none;
+    }
+    /* dark mode button */
+    #dark {
+        border-color: transparent;
+        background-color: transparent;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        top: 1.2rem;
+        right: 2rem;
+    }
+    /* HEADER */
+    header {
+        background-color: #0B132B;
+        display: flex;
+        justify-content: flex-start;
+    }
+    .navigation {
+        display: flex;
+        padding: 1.5rem;
+        list-style: none;
+    }
+    .navigation a {
+        text-decoration: none;
+        margin-right: 2rem;
+        margin-left: 2rem;
+        color: #E6E8E6;
+    }
+    header ul {
+        margin: 0;
+    }
+
+    /* MAIN */
+    form {
+        height: 100%;
+        margin: 0 15rem 0;
+    }
+    form fieldset {
+        margin: 2rem;
+    }
+    main h1 {
+        padding: 2rem 2rem 0;
+        margin: 0;
+        text-align: center;
+        font-size: 2rem;
+    }
+    .submitButton {
+        margin: 0 2rem 2rem;
+    }
+    fieldset {
+        border: 2px solid var(--border);
+        border-radius: var(--radius);
+        font-size: var(--font);
+    }
+    .top {
+        display: block;
+        padding: .7rem 1rem .7rem;
+        font-size: var(--font2);
+    }
+    .top input {
+        display: block;
+        font-size: var(--font);
+        padding: .3rem;
+        border-radius: var(--radius2);
+        background-color: var(--border);
+        color: var(--letter);
+    }
+    .sbs {
+        display: block;
+        padding: .4rem 1rem .4rem;
+        font-size: var(--font2);
+    }
+    #bo_description {
+        padding: 1.8rem 1rem 0;
+    }
+    #box {
+        padding: 1rem;
+    }
+    .submitButton {
+        padding: 1rem;
+        border-radius: var(--radius2);
+        background-color: var(--border);
+        color: var(--letter);
+        font-size: var(--font2);
+    }    
+    form label.top input:required {
+        border-left: red solid 6px;
+    }
+    form label.top input:required:valid {
+        border-left: green solid 6px;
+    }
+
+    /* FOOTER */
+    footer {
+        background-color: #E6E8E6;
+        color: #0B132B;
+        font-size: 1rem;
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        text-align: center;
+        width: 100%;
+    }
+    footer .first {
+        display: flex;
+        justify-content: center;
+    }
+    p {
+        padding: .5rem;
+        margin: 0;
+        margin-left: .7rem;
+        margin-right: .7rem;
+    }   
+    footer p {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        max-width: 100%;
+        margin: 0;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
