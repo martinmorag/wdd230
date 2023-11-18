@@ -76,15 +76,17 @@
         height: 100%;
         margin: 0 1rem 0;
     }
-    form fieldset {
-        margin: 2rem;
+    form {
+        width: 20rem;
+        margin: 0 auto;
     }
     h1 {
-        margin: 2rem 2rem 0;
+        margin: 2rem 2rem 2rem;
         font-size: 1rem;
+        text-align: center;
     }
     .submitButton {
-        margin: 0 2rem 2rem;
+        margin: 2rem 2rem 2rem;
     }
     fieldset {
         border: 2px solid var(--border);
@@ -128,6 +130,51 @@
     form label.top input:required:valid {
         border-left: green solid 6px;
     }
+
+    /* SIDEBAR */
+    .sidebar {
+        height: 100%;
+        width: 85%;
+        padding-top: 30px;
+        padding-left: 40px;
+        text-align: center;
+    }
+    .main {
+        height: 100%;
+        padding-left: 40px;
+        width: 85%;
+        text-align: center;
+    }
+
+    .sidebar p {
+        padding: 1px 0 1px 0;
+        text-decoration: none;
+        font-size: 15px;
+        font-weight: bold;
+        color: black;
+        display: block;
+    }
+
+    .sidebar a:hover {
+        color: black;
+    }
+
+
+    .membership-level {
+        background-color: #0B132B;
+        color: #E6E8E6;
+        font-size: 24px;
+        padding: 10px;
+        text-align: center;
+        border-radius: 5px;
+        width: 75%;
+        margin: 0 auto;
+    }
+
+    .level-details {
+        padding: 10px;
+    }
+
 
     /* FOOTER */
     footer {
