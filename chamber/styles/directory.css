@@ -74,17 +74,17 @@
         text-align: center;    
     }
     .section {
+	display: block;
         border: 3px solid black;
         margin: .7rem;
         padding: 1rem;
         background-color: #4a5272;
         border-radius: 5px;
         color:white;
-	display: block;
     }
     /* list */
     .section {
-        display: grid;
+        display: block;
         grid-template-columns: 250px 1fr 1fr;
         border: 3px solid black;
         background-color: #4a5272;
@@ -227,6 +227,7 @@
         margin: 0 auto;
     }
     .section {
+	display: block;
         border: 3px solid black;
         margin: 1rem auto 1rem;
         padding: 1rem;
@@ -234,11 +235,10 @@
         border-radius: 5px;
         color:white;
         width: 300px;
-	display: block;
     }
     /* list */
     .section{
-        display: grid;
+        display: block;
         grid-template-columns: 100px .7fr 1fr;
         border: 3px solid black;
         border-radius: 5px;
