@@ -68,14 +68,12 @@
         color: #E6E8E6;
     }
     /* grid */
-    main {
+    .members_grid {
 	display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-    }
-    .members_grid {
         text-align: center;    
     }
-    .section {
+    div.section {
 	display: block;
         border: 3px solid black;
         margin: .7rem;
