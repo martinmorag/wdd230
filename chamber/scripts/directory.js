@@ -102,8 +102,8 @@ const displayMembersGrid = (members) => {
 
     name.textContent = `${member.name}`;
     membership.textContent = `${member.membershipLevel}`;
-    image.setAttribute('src', member.icon);
-    image.setAttribute('alt', member.name);
+    /*image.setAttribute('src', member.icon);
+    image.setAttribute('alt', member.name);*/
     image.setAttribute('width', '150');
     image.setAttribute('height', 'auto');
     address.textContent = `${member.address}`;
