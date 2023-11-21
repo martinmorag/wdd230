@@ -104,7 +104,7 @@ const displayMembersGrid = (members) => {
     membership.textContent = `${member.membershipLevel}`;
 
     image.src = member.icon || 'path/to/placeholder-image.jpg';
-    image.alt = member.name || 'path/to/alt';
+    image.alt = member.name || 'Default Alt Text';
     /*image.setAttribute('src', member.icon);
     image.setAttribute('alt', member.name);*/
     image.setAttribute('width', '150');
