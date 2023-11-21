@@ -226,7 +226,7 @@
         width: 90%;
         margin: 0 auto;
     }
-    .section {
+    div.section {
 	display: block;
         border: 3px solid black;
         margin: 1rem auto 1rem;
