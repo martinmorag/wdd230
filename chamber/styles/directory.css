@@ -80,6 +80,7 @@
         background-color: #4a5272;
         border-radius: 5px;
         color:white;
+	display: block;
     }
     /* list */
     .section {
@@ -233,6 +234,7 @@
         border-radius: 5px;
         color:white;
         width: 300px;
+	display: block;
     }
     /* list */
     .section{
