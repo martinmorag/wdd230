@@ -88,7 +88,7 @@ async function getMembersDataGrid() {
 getMembersDataGrid();
 
 const displayMembersGrid = (members) => {
-  const sections = directory.querySelectorAll('section'); // Select all the sections
+  const sections = directory.querySelectorAll('.section'); // Select all the sections
 
   members.forEach((member, index) => {
     const section = sections[index]; // Select the corresponding section
