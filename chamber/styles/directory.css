@@ -73,7 +73,7 @@
         grid-template-columns: 1fr 1fr 1fr;
         text-align: center;    
     }
-    .members_grid section {
+    .section {
         border: 3px solid black;
         margin: .7rem;
         padding: 1rem;
@@ -82,7 +82,7 @@
         color:white;
     }
     /* list */
-    .members_list section{
+    .section {
         display: grid;
         grid-template-columns: 250px 1fr 1fr;
         border: 3px solid black;
@@ -225,7 +225,7 @@
         width: 90%;
         margin: 0 auto;
     }
-    .members_grid section {
+    .section {
         border: 3px solid black;
         margin: 1rem auto 1rem;
         padding: 1rem;
@@ -235,7 +235,7 @@
         width: 300px;
     }
     /* list */
-    .members_list section{
+    .section{
         display: grid;
         grid-template-columns: 100px .7fr 1fr;
         border: 3px solid black;
