@@ -103,7 +103,7 @@ const displayMembersGrid = (members) => {
     name.textContent = `${member.name}`;
     membership.textContent = `${member.membershipLevel}`;
 
-    image.src = member.icon || 'path/to/placeholder-image';
+    image.src = member.icon || 'path/to/placeholder-image.jpg';
     image.alt = member.name || 'path/to/alt';
     /*image.setAttribute('src', member.icon);
     image.setAttribute('alt', member.name);*/
