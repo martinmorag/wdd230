@@ -37,8 +37,10 @@ function displayResults(data) {
     currentTemp.innerHTML = `${roundedTemp}&deg;C`;
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     let desc = data.weather[0].description;
-    weatherIcon.setAttribute('src', iconsrc);
-    weatherIcon.setAttribute('alt', 'Weather Icon');
+    weatherIcon.src = iconsrc || 'path/to/placeholder-image.jpg';
+    /*setAttribute('src', iconsrc);*/
+    weatherIcon.alt = 'Weather Icon' || 'Default Alt Text';
+    /* setAttribute('alt', 'Weather Icon'); */
     captionDesc.textContent = desc;
 }
 
