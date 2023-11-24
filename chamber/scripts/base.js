@@ -106,16 +106,20 @@ function displayMembers(data) {
     const silverMember = getRandomMember(data, 'Silver');
     if (silverMember) {
         name[0].textContent = silverMember.name;
-        image[0].setAttribute('src', silverMember.icon);
-        image[0].setAttribute('alt', silverMember.name);
+        image[0].src = silverMember.icon ││ 'path/to/firstimage.jpg';
+        /* setAttribute('src', silverMember.icon); */
+        image[0].alt = silverMember.name ││ 'First Alt Text';
+        /* setAttribute('alt', silverMember.name); */
         membership[0].textContent = silverMember.membershipLevel;
     }
 
     const goldMember = getRandomMember(data, 'Gold');
     if (goldMember) {
         name[1].textContent = goldMember.name;
-        image[1].setAttribute('src', goldMember.icon);
-        image[1].setAttribute('alt', goldMember.name);
+        image[1].src = goldMember.icon ││ 'path/to/secondimage.jpg';
+        /* setAttribute('src', goldMember.icon); */
+        image[1].alt = goldMember.name ││ 'Second Alt Text';
+        /* setAttribute('alt', goldMember.name); */
         membership[1].textContent = goldMember.membershipLevel;
     }
 }
