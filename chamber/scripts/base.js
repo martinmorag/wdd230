@@ -33,7 +33,8 @@ async function apiFetch() {
 apiFetch();
 
 function displayResults(data) {
-    currentTemp.innerHTML = `${data.main.temp}&deg;C`;
+    const roundedTemp = Math.round(data.main.temp);
+    currentTemp.innerHTML = `${roundedTemp}&deg;C`;
     const iconsrc = `https://openweathermap.org/img/w/${data.weather[0].icon}.png`;
     let desc = data.weather[0].description;
     weatherIcon.setAttribute('src', iconsrc);
@@ -52,7 +53,8 @@ for (const forecast of forecastData.list) {
 
 
     if (!displayedDates.includes(forecastDate.toDateString())) {
-        const temperature = forecast.main.temp;
+        const roundTemp = Math.round(forecast.main.temp);
+        const temperature = roundTemp;
 
         const listItem = document.createElement('li');
         listItem.innerHTML = `${forecastDate.toDateString()}: ${temperature.toFixed(1)}°C`;
