@@ -53,11 +53,10 @@ for (const forecast of forecastData.list) {
 
 
     if (!displayedDates.includes(forecastDate.toDateString())) {
-        const roundTemp = Math.round(forecast.main.temp);
-        const temperature = roundTemp;
+        const temperature = forecast.main.temp;
 
         const listItem = document.createElement('li');
-        listItem.innerHTML = `${forecastDate.toDateString()}: ${temperature.toFixed(1)}°C`;
+        listItem.innerHTML = `${forecastDate.toDateString()}: ${temperature.toFixed(0)}°C`;
         forecastList.appendChild(listItem);
 
         displayedDates.push(forecastDate.toDateString()); 
