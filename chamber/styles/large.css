@@ -202,14 +202,22 @@
         grid-column: 1 / 2;
         z-index: 1;
         text-align: center;
+        position: relative;
+    }
+    .back {
+        max-width: 100%;
+        height: auto;
+        display: block;
     }
     .banner h3 {
         position: absolute;
         font-family: 'Young Serif';
         font-weight: lighter;
-        top: 268%;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80%;
         font-size: .7rem;
-        padding: 0 2.5rem 0;
     }
     #closeBanner {
         cursor: pointer;
