@@ -1,0 +1,28 @@
+{
+    "thermos" : [
+        {
+            "name" : "Hammerton Green Thermo",
+            "storingCapacity" : 1,
+            "status" : "New",
+            "photo" : "https://martinmorag.github.io/wdd230/finalWebsite/photos/Green.png"
+        },
+        {
+            "name" : "Black Thermo",
+            "storingCapacity": 0.590,
+            "status" : "New",
+            "photo" : "https://martinmorag.github.io/wdd230/finalWebsite/photos/MatteBlack.png"
+        },
+        {
+            "name" : "Hammerton Clay Thermo",
+            "storingCapacity" : 0.940,
+            "status" : "New",
+            "photo" : "https://martinmorag.github.io/wdd230/finalWebsite/photos/Clay.png"
+        },
+        {
+            "name" : "Limestone Thermo",
+            "storingCapacity" : 0.940,
+            "status" : "New",
+            "photo" : "https://martinmorag.github.io/wdd230/finalWebsite/photos/Limestone.png"
+        }
+    ]
+}
