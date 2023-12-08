@@ -4,25 +4,71 @@
             "name" : "Hammerton Green Thermo",
             "storingCapacity" : 1,
             "status" : "New",
-            "photo" : "https://martinmorag.github.io/wdd230/finalWebsite/photos/Green.png"
+            "photo" : "https://martinmorag.github.io/wdd230/finalWebsite/photos/Green1lt.png",
+            "price" : 78900
+        },
+        {
+            "name" : "Hammerton Clay Thermo",
+            "storingCapacity" : 1,
+            "status" : "New",
+            "photo" : "https://martinmorag.github.io/wdd230/finalWebsite/photos/Clay1lt.png",
+            "price" : 78900
+        },
+        {
+            "name" : "Hammerton Green Thermo",
+            "storingCapacity": 0.590,
+            "status" : "New",
+            "photo" : "https://martinmorag.github.io/wdd230/finalWebsite/photos/Green.590lt.png",
+            "price" : 72900
         },
         {
             "name" : "Black Thermo",
             "storingCapacity": 0.590,
             "status" : "New",
-            "photo" : "https://martinmorag.github.io/wdd230/finalWebsite/photos/MatteBlack.png"
+            "photo" : "https://martinmorag.github.io/wdd230/finalWebsite/photos/MatteBlack.590lt.png",
+            "price" : 72900
+        },
+        {
+            "name" : "Charcoal Thermo",
+            "storingCapacity": 0.590,
+            "status" : "New",
+            "photo" : "https://martinmorag.github.io/wdd230/finalWebsite/photos/Charcoal.590lt.png",
+            "price" : 72900
+        },
+        {
+            "name" : "Hammerton Green Thermo",
+            "storingCapacity" : 0.940,
+            "status" : "New",
+            "photo" : "https://martinmorag.github.io/wdd230/finalWebsite/photos/Green.940lt.png",
+            "price" : 79900
+        },
+        {
+            "name" : "Hammerton Silver Thermo",
+            "storingCapacity" : 0.940,
+            "status" : "New",
+            "photo" : "https://martinmorag.github.io/wdd230/finalWebsite/photos/Silver.940lt.png",
+            "price" : 79900
         },
         {
             "name" : "Hammerton Clay Thermo",
             "storingCapacity" : 0.940,
             "status" : "New",
-            "photo" : "https://martinmorag.github.io/wdd230/finalWebsite/photos/Clay.png"
+            "photo" : "https://martinmorag.github.io/wdd230/finalWebsite/photos/Clay.940lt.png",
+            "price" : 79900
+        },
+        {
+            "name" : "Matte Black Thermo",
+            "storingCapacity" : 0.940,
+            "status" : "New",
+            "photo" : "https://martinmorag.github.io/wdd230/finalWebsite/photos/MatteBlack.940lt.png",
+            "price" : 79900
         },
         {
             "name" : "Limestone Thermo",
             "storingCapacity" : 0.940,
             "status" : "New",
-            "photo" : "https://martinmorag.github.io/wdd230/finalWebsite/photos/Limestone.png"
+            "photo" : "https://martinmorag.github.io/wdd230/finalWebsite/photos/Limestone.940lt.png",
+            "price" : 79900
         }
     ]
 }
