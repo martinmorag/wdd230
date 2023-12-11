@@ -89,6 +89,7 @@
         display: block;
         padding: 10px 0 0;
         text-align: start;
+	letter-spacing: 1px;
     }
     form input {
         display: block;
@@ -107,6 +108,7 @@
         background-color: #629379;
         font-family: "Anton";
         font-size: 17px;
+	letter-spacing: 1px;
     }
     .wpp_section {
         padding: 0 0 100px;
@@ -127,6 +129,7 @@
         color: white;
         font-family: "Anton";
         display: flex;
+	letter-spacing: 1px;
     }
     .wpp_button i {
         margin: 10px auto 0;
@@ -238,6 +241,7 @@
         display: block;
         padding: 10px 0 0;
         text-align: start;
+	letter-spacing: 1px;
     }
     form input {
         display: block;
@@ -256,6 +260,7 @@
         background-color: #629379;
         font-family: "Anton";
         font-size: 17px;
+	letter-spacing: 1px;
     }
     .wpp_section {
         padding: 100px 0 100px;
@@ -275,6 +280,7 @@
         color: white;
         font-family: "Anton";
         display: flex;
+	letter-spacing: 1px;
     }
     .wpp_button i {
         margin: 12px auto 0;
@@ -436,6 +442,7 @@
         display: block;
         padding: 10px 0 0;
         text-align: start;
+	letter-spacing: 1px;
     }
     form input {
         display: block;
@@ -454,6 +461,7 @@
         background-color: #629379;
         font-family: "Anton";
         font-size: 17px;
+	letter-spacing: 1px;
     }
     .wpp_section {
         padding: 80px 0 80px;
@@ -473,6 +481,7 @@
         color: white;
         font-family: "Anton";
         display: flex;
+	letter-spacing: 1px;
     }
     .wpp_button i {
         margin: 12px auto 0;
