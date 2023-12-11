@@ -51,31 +51,46 @@ langBtn.addEventListener('click', function() {
 });
 
 
-/* EMAIL FORM */
 
-/*let form = document.getElementById('myForm');
-  form.addEventListener('submit', function(event) {
-    event.preventDefault(); // Prevent form submission
 
-    // Get form data
-    let formData = new FormData(form);
+/* TOGGLE MENU */
 
-    // Convert form data to JSON
-    let jsonData = {};
-    formData.forEach(function(value, key) {
-      jsonData[key] = value;
-    });
+let theToggle = document.getElementById('toggle');
 
-    // Encrypt the JSON data
-    let encryptedData = CryptoJS.AES.encrypt(JSON.stringify(jsonData), 'your-secret-key').toString();
+// hasClass
+function hasClass(elem, className) {
+	return new RegExp(' ' + className + ' ').test(' ' + elem.className + ' ');
+}
+// addClass
+function addClass(elem, className) {
+    if (!hasClass(elem, className)) {
+    	elem.className += ' ' + className;
+    }
+}
+// removeClass
+function removeClass(elem, className) {
+	let newClass = ' ' + elem.className.replace( /[\t\r\n]/g, ' ') + ' ';
+	if (hasClass(elem, className)) {
+        while (newClass.indexOf(' ' + className + ' ') >= 0 ) {
+            newClass = newClass.replace(' ' + className + ' ', ' ');
+        }
+        elem.className = newClass.replace(/^\s+|\s+$/g, '');
+    }
+}
+// toggleClass
+function toggleClass(elem, className) {
+	let newClass = ' ' + elem.className.replace( /[\t\r\n]/g, " " ) + ' ';
+    if (hasClass(elem, className)) {
+        while (newClass.indexOf(" " + className + " ") >= 0 ) {
+            newClass = newClass.replace( " " + className + " " , " " );
+        }
+        elem.className = newClass.replace(/^\s+|\s+$/g, '');
+    } else {
+        elem.className += ' ' + className;
+    }
+}
 
-    // Set the encrypted data as a hidden field value
-    let encryptedField = document.createElement('input');
-    encryptedField.type = 'hidden';
-    encryptedField.name = 'encryptedData';
-    encryptedField.value = encryptedData;
-    form.appendChild(encryptedField);
-
-    // Submit the form
-    form.submit();
-  });*/
+theToggle.onclick = function() {
+   toggleClass(this, 'on');
+   return false;
+}
