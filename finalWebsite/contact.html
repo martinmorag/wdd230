@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+
+    <meta name="author" content="Martin Marcelo Moraga Lopez">
+    <meta name="description" content="Welcome! Be sure to contact us for any question you may have, we assure you that you will have a quick response">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/contact.css">
+    <link rel="icon" href="mate.ico">
+</head>
+<body>
+    <header>
+        <nav>
+            <button id="menu"></button>
+            <ul class="navigation">
+                <li><a href="https://martinmorag.github.io/wdd230/finalWebsite/index.html" title="home" class="home">Home</a></li>
+                <li><a href="https://martinmorag.github.io/wdd230/finalWebsite/products.html" title="products" class="products">Our Products</a></li>
+                <li><a href="https://martinmorag.github.io/wdd230/finalWebsite/contact.html" title="contact" class="contact">Contact</a></li>            
+            </ul>
+            <button class="lang_btn"><img src="https://martinmorag.github.io/wdd230/finalWebsite/photos/lang.png" alt="icon"></button>
+        </nav>
+    </header>
+    <main>
+    <img src="https://martinmorag.github.io/wdd230/finalWebsite/photos/background.webp" alt="background image" class="back-image">
+    <h1 class="form_title">Do you have a question?</h1>
+    <form action="https://formsubmit.co/8faef120fa16971da7dc47ef0dede157" method="POST">
+        <fieldset>
+        <label class="top">Name*</label><input name="name" class="name" type="text" required>
+        <label class="top">Email*</label><input name="email" class="email" type="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+        <label class="top">Phone Number*</label><input name="phone" class="phone" type="tel">
+        <label class="top">What is this regarding?</label><input name="matter" class="matter" type="text">
+        <label class="top">Ask your question</label>
+        <textarea name="message" class="question" rows="5" cols="20">         </textarea>
+        </fieldset>
+        <input name="submitBtn" class="submitBtn" type="submit" value="Send my question">
+    </form>
+    <button class="wpp_button" onclick="document.location='https://wa.link/q2ib6v'" formtarget="_blank"><i>Contact us through WhatsApp</i><img src="https://martinmorag.github.io/wdd230/finalWebsite/photos/wpp_logo.png" alt="wpp_logo" class="wpp_logo"></button>
+    </main>
+    <footer>
+        <p>Stanley Thermos in Virasoro</p>
+    </footer>
+    <script src="scripts/contact.js"></script>    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.0.0/crypto-js.min.js"></script>
+</body>
+</html>
