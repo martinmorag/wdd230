@@ -9,6 +9,7 @@ const web_title = document.querySelector('title');
 const home = document.querySelector('.home');
 const products = document.querySelector('.products');
 const contact = document.querySelector('.contact');
+const footer = document.querySelector('footer p');
 
 let whichLanguage = false;
 
@@ -27,6 +28,7 @@ function changeLang(whichLang) {
     home.innerHTML = 'Inicio';
     products.innerHTML = 'Nuestros Productos';
     contact.innerHTML = 'Contacto';
+    footer.innerHTML = 'Termos Stanley en Virasoro';
   }
   else {
     title.innerHTML = 'Do you have a question?';
@@ -41,6 +43,7 @@ function changeLang(whichLang) {
     home.innerHTML = 'Home';
     products.innerHTML = 'Our Products';
     contact.innerHTML = 'Contact';
+    footer.innerHTML = 'Stanley Thermos in Virasoro';
   }
 }
 
