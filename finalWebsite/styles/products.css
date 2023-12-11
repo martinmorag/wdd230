@@ -70,6 +70,7 @@
         grid-row: 1 / 2;
         text-align: center;
         padding: 50px 0 0;
+	font-size: 40px;
     }
     .product {
         display: grid;
@@ -216,7 +217,7 @@
         grid-row: 1 / 2;
         text-align: center;
         padding: 50px 0 0;
-        font-size: 28px;
+        font-size: 35px;
     }
     .product:nth-child(1) {
         grid-column: 1 / 2;
@@ -427,7 +428,7 @@
         grid-row: 1 / 2;
         text-align: center;
         padding: 50px 0 0;
-        font-size: 28px;
+        font-size: 30px;
     }
     .product:nth-child(1) {
         grid-column: 1 / 2;
