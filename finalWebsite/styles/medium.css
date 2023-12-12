@@ -198,6 +198,8 @@
     }
     .thermo {
       padding-top: 75px;
+      width: 200px;
+      height: auto;
     }
   
     .sample:nth-child(2){
