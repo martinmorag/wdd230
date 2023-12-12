@@ -75,6 +75,13 @@ let clicks = 0;
 
 let samples = document.querySelectorAll(".sample");
 let thermos = document.querySelectorAll(".thermo");
+let W = "";
+
+function resize() {
+  W = window.outerWidth;
+}
+
+
 
 samples[1].addEventListener("click", () => {
   
