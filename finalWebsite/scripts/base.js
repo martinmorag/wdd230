@@ -60,9 +60,13 @@ let matteBlackThermoAlt = "";
 
 const hidden = document.querySelector('.hidden');
 
-addEventListener('click', function() {
+hidden.addEventListener('click', function() {
+  if (whichLanguage) {
+    hidden.innerHTML = 'producto duradero, confiable y de alto nivel...Y acá lo tenemos.';
+  } else {
     hidden.innerHTML = 'long lasting, trustworthy and high level product...And we got it here.';
-})
+  }
+});
 
 
 /* ANIMATED THERMOS */
@@ -136,3 +140,52 @@ samples[1].addEventListener("click", () => {
   }
 });
 
+
+/* CHANGE LANGUAGE BUTTON */
+const langBtn = document.querySelector('.lang_btn');
+/* tags that change language */
+const web_title = document.querySelector('title');
+const typed = document.querySelector('.typed');
+const look = document.querySelector('.take_look');
+const btn = document.querySelector('.products_button');
+const home = document.querySelector('.home');
+const products = document.querySelector('.products');
+const contact = document.querySelector('.contact');
+const footer = document.querySelector('footer p');
+
+
+
+
+let whichLanguage = false;
+
+
+function changeLang(whichLang) {
+  if (whichLang) {
+    web_title.innerHTML = 'Termos en Virasoro';
+    typed.innerHTML = 'Disfrute del arte de preservar la perfección. Eleva cada sorbo con Termos Stanley. Donde la calidez se une a la perfección a la innovación. Te conocemos, y lo que buscas es un...';
+    look.innerHTML = '¡Mira lo que tenemos para ofrecer!';
+    btn.innerHTML = 'Mira nuestros productos';
+    hidden.innerHTML = 'click acá';
+    home.innerHTML = 'Inicio';
+    products.innerHTML = 'Nuestro Productos';
+    contact.innerHTML = 'Contacto';
+    footer.innerHTML = 'Termos Stanley en Virasoro';
+  }
+  else {
+    web_title.innerHTML = 'Thermos in Virasoro';
+    typed.innerHTML = 'Indulge in the art of preserving perfection. Elevate your every sip with Stanley Thermos. Where warmth meets innovation seamlessly. We know you, and what you look for is a...';
+    look.innerHTML = 'Take a look of what we have to offer!';
+    btn.innerHTML = 'See our products';
+    hidden.innerHTML = 'click here';
+    home.innerHTML = 'Home';
+    products.innerHTML = 'Our Products';
+    contact.innerHTML = 'Contact';
+    footer.innerHTML = 'Stanley Thermos in Virasoro';
+  }
+}
+
+langBtn.addEventListener('click', function() {
+  whichLanguage = !whichLanguage;
+  
+  changeLang(whichLanguage);
+});
