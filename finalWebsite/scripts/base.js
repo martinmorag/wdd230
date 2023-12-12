@@ -61,7 +61,7 @@ let matteBlackThermoAlt = "";
 const hidden = document.querySelector('.hidden');
 
 addEventListener('click', function() {
-    hidden.innerHTML = 'long lasting, trustworthy and high level product. And we got it here.';
+    hidden.innerHTML = 'long lasting, trustworthy and high level product...And we got it here.';
 })
 
 
@@ -135,5 +135,4 @@ samples[1].addEventListener("click", () => {
     thermos[1].alt = limestoneThermoAlt;
   }
 });
-
 
