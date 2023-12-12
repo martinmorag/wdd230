@@ -100,7 +100,7 @@
         width: 100%;
     }
     .submitBtn {
-        width: 75%;
+        width: 90%;
         margin: 20px auto;
         padding: 7px;
         border-radius: 10px;
@@ -252,7 +252,7 @@
         width: 100%;
     }
     .submitBtn {
-        width: 75%;
+        width: 90%;
         margin: 20px auto;
         padding: 7px;
         border-radius: 10px;
@@ -270,7 +270,7 @@
         z-index: 1;
         left: 50%;
         transform: translateX(-50%);
-        width: 260px;
+        width: 290px;
         height: 50px;
         border-radius: 20px;
         border-color: #629379;
