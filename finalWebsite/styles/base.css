@@ -136,12 +136,15 @@
         width: 150px;
         height: auto;
         position: relative;
+        bottom: 20px;
     }
     .thermo_drawing, .mate {
         top: 50px;
     }
-    .thermo_drawing {
+    img.thermo_drawing {
         right: 20px;
+        width: 200px;
+        height: auto;
     }
     .mate {
         left: 20px;
