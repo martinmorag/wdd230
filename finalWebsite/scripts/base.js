@@ -80,7 +80,7 @@ let W = "";
 function resize() {
   W = window.outerWidth;
 }
-
+resize();
 
 
 samples[1].addEventListener("click", () => {
@@ -89,62 +89,123 @@ samples[1].addEventListener("click", () => {
   if (clicks === 4) {
     clicks = 0;
   }
-  if (clicks === 0) {
-    samples[0].style.backgroundColor = "#31493C";
-    samples[0].style.top = "80px";
-    samples[0].style.left = "-20px";
-    $(samples[0]).animate({top: "50px", left: "10px"}, "slow");
-    thermos[0].src = greenThermoImg;
-    thermos[0].alt = greenThermoAlt;
-    samples[1].style.backgroundColor = "#629379";
-    samples[1].style.top = "30px";
-    samples[1].style.left = "120px";
-    $(samples[1]).animate({top: "0", left: "190px"}, "slow");
-    thermos[1].src = matteBlackThermoImg;
-    thermos[1].alt = matteBlackThermoAlt;
+  if (W > 760) {
+    if (clicks === 0) {
+        samples[0].style.backgroundColor = "#31493C";
+        samples[0].style.top = "80px";
+        samples[0].style.left = "-20px";
+        $(samples[0]).animate({top: "50px", left: "10px"}, "slow");
+        thermos[0].src = greenThermoImg;
+        thermos[0].alt = greenThermoAlt;
+        samples[1].style.backgroundColor = "#629379";
+        samples[1].style.top = "30px";
+        samples[1].style.left = "120px";
+        $(samples[1]).animate({top: "0", left: "190px"}, "slow");
+        thermos[1].src = matteBlackThermoImg;
+        thermos[1].alt = matteBlackThermoAlt;
+    }
+    if (clicks === 1) {
+        samples[0].style.backgroundColor = "#31493C";
+        samples[0].style.top = "80px";
+        samples[0].style.left = "-20px";
+        $(samples[0]).animate({top: "50px", left: "10px"}, "slow");
+        thermos[0].src = clayThermoImg;
+        thermos[0].alt = clayThermoAlt;
+        samples[1].style.backgroundColor = "#629379";
+        samples[1].style.top = "30px";
+        samples[1].style.left = "120px";
+        $(samples[1]).animate({top: "0", left: "190px"}, "slow");
+        thermos[1].src = greenThermoImg;
+        thermos[1].alt = greenThermoAlt;
+    }
+    if (clicks === 2) {
+        samples[0].style.backgroundColor = "#31493C";
+        samples[0].style.top = "80px";
+        samples[0].style.left = "-20px";
+        $(samples[0]).animate({top: "50px", left: "10px"}, "slow");
+        thermos[0].src = limestoneThermoImg;
+        thermos[0].alt = limestoneThermoAlt;
+        samples[1].style.backgroundColor = "#629379";
+        samples[1].style.top = "30px";
+        samples[1].style.left = "120px";
+        $(samples[1]).animate({top: "0", left: "190px"}, "slow");
+        thermos[1].src = clayThermoImg;
+        thermos[1].alt = clayThermoAlt;
+    }
+    if (clicks === 3) {
+        samples[0].style.backgroundColor = "#31493C";
+        samples[0].style.top = "80px";
+        samples[0].style.left = "-20px";
+        $(samples[0]).animate({top: "50px", left: "10px"}, "slow");
+        thermos[0].src = matteBlackThermoImg;
+        thermos[0].alt = matteBlackThermoAlt;
+        samples[1].style.backgroundColor = "#629379";
+        samples[1].style.top = "30px";
+        samples[1].style.left = "120px";
+        $(samples[1]).animate({top: "0", left: "190px"}, "slow");
+        thermos[1].src = limestoneThermoImg;
+        thermos[1].alt = limestoneThermoAlt;
+    }
   }
-  if (clicks === 1) {
-    samples[0].style.backgroundColor = "#31493C";
-    samples[0].style.top = "80px";
-    samples[0].style.left = "-20px";
-    $(samples[0]).animate({top: "50px", left: "10px"}, "slow");
-    thermos[0].src = clayThermoImg;
-    thermos[0].alt = clayThermoAlt;
-    samples[1].style.backgroundColor = "#629379";
-    samples[1].style.top = "30px";
-    samples[1].style.left = "120px";
-    $(samples[1]).animate({top: "0", left: "190px"}, "slow");
-    thermos[1].src = greenThermoImg;
-    thermos[1].alt = greenThermoAlt;
+  if (W <= 760) {
+    if (clicks === 0) {
+        samples[0].style.backgroundColor = "#31493C";
+        samples[0].style.top = "80px";
+        samples[0].style.left = "-20px";
+        $(samples[0]).animate({top: "50px", left: "10px"}, "slow");
+        thermos[0].src = greenThermoImg;
+        thermos[0].alt = greenThermoAlt;
+        samples[1].style.backgroundColor = "#629379";
+        samples[1].style.top = "30px";
+        samples[1].style.left = "0px";
+        $(samples[1]).animate({top: "0", left: "100px"}, "slow");
+        thermos[1].src = matteBlackThermoImg;
+        thermos[1].alt = matteBlackThermoAlt;
+    }
+    if (clicks === 1) {
+        samples[0].style.backgroundColor = "#31493C";
+        samples[0].style.top = "80px";
+        samples[0].style.left = "-20px";
+        $(samples[0]).animate({top: "50px", left: "10px"}, "slow");
+        thermos[0].src = clayThermoImg;
+        thermos[0].alt = clayThermoAlt;
+        samples[1].style.backgroundColor = "#629379";
+        samples[1].style.top = "30px";
+        samples[1].style.left = "0px";
+        $(samples[1]).animate({top: "0", left: "100px"}, "slow");
+        thermos[1].src = greenThermoImg;
+        thermos[1].alt = greenThermoAlt;
+    }
+    if (clicks === 2) {
+        samples[0].style.backgroundColor = "#31493C";
+        samples[0].style.top = "80px";
+        samples[0].style.left = "-20px";
+        $(samples[0]).animate({top: "50px", left: "10px"}, "slow");
+        thermos[0].src = limestoneThermoImg;
+        thermos[0].alt = limestoneThermoAlt;
+        samples[1].style.backgroundColor = "#629379";
+        samples[1].style.top = "30px";
+        samples[1].style.left = "0px";
+        $(samples[1]).animate({top: "0", left: "100px"}, "slow");
+        thermos[1].src = clayThermoImg;
+        thermos[1].alt = clayThermoAlt;
+    }
+    if (clicks === 3) {
+        samples[0].style.backgroundColor = "#31493C";
+        samples[0].style.top = "80px";
+        samples[0].style.left = "-20px";
+        $(samples[0]).animate({top: "50px", left: "10px"}, "slow");
+        thermos[0].src = matteBlackThermoImg;
+        thermos[0].alt = matteBlackThermoAlt;
+        samples[1].style.backgroundColor = "#629379";
+        samples[1].style.top = "30px";
+        samples[1].style.left = "0px";
+        $(samples[1]).animate({top: "0", left: "100px"}, "slow");
+        thermos[1].src = limestoneThermoImg;
+        thermos[1].alt = limestoneThermoAlt;
+    }
   }
-  if (clicks === 2) {
-    samples[0].style.backgroundColor = "#31493C";
-    samples[0].style.top = "80px";
-    samples[0].style.left = "-20px";
-    $(samples[0]).animate({top: "50px", left: "10px"}, "slow");
-    thermos[0].src = limestoneThermoImg;
-    thermos[0].alt = limestoneThermoAlt;
-    samples[1].style.backgroundColor = "#629379";
-    samples[1].style.top = "30px";
-    samples[1].style.left = "120px";
-    $(samples[1]).animate({top: "0", left: "190px"}, "slow");
-    thermos[1].src = clayThermoImg;
-    thermos[1].alt = clayThermoAlt;
-  }
-  if (clicks === 3) {
-    samples[0].style.backgroundColor = "#31493C";
-    samples[0].style.top = "80px";
-    samples[0].style.left = "-20px";
-    $(samples[0]).animate({top: "50px", left: "10px"}, "slow");
-    thermos[0].src = matteBlackThermoImg;
-    thermos[0].alt = matteBlackThermoAlt;
-    samples[1].style.backgroundColor = "#629379";
-    samples[1].style.top = "30px";
-    samples[1].style.left = "120px";
-    $(samples[1]).animate({top: "0", left: "190px"}, "slow");
-    thermos[1].src = limestoneThermoImg;
-    thermos[1].alt = limestoneThermoAlt;
-  }
+  
 });
 
 
