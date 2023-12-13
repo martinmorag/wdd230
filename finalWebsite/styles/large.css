@@ -2,6 +2,7 @@
 
     body {
         font-family: "Anton";
+        margin: 0;
     }
 
     /* HEADER */
@@ -26,7 +27,7 @@
     #menu {
         display: block;
         position: absolute;
-	       top: .75rem;
+	    top: .75rem;
         background-color: transparent;
         border: none;
         transform: translateX(10%);        
@@ -34,7 +35,7 @@
         font-size: 30px;
     }
     #menu.open {
-        transform: translateX(518%);
+        transform: translateX(260%);
     }
     #menu::before {
         content: "☰";
@@ -205,8 +206,8 @@
     }
     .phrase {
         background-color: #748176;
-        width: 250px;
-        height: 310px;
+        width: 200px;
+        height: 330px;
         margin: 10px auto 60px;
         border-radius: 20px;
     }
@@ -229,7 +230,8 @@
         grid-row: 2 / 3;
         text-align: center;
         font-size: 22px;
-        margin: 0;
+        margin: 0 auto;
+        width: 200px;
     }
 
     /* ANIMATED THERMOS */
@@ -237,14 +239,14 @@
         grid-row: 3 / 4;
         margin: 0 auto;
         position: relative;
-        width: 380px;
+        width: 250px;
         height: 500px;
     }
   
     .sample:nth-child(1) {
         position: absolute;
-        width: 170px;
-        height: 300px;
+        width: 130px;
+        height: 250px;
         top: 50px;
         right: 30px;
         left: 20px;
@@ -254,14 +256,14 @@
     }
     .thermo {
       padding: 45px 0 0 0;
-      width: 160px;
+      width: 110px;
       height: auto;
     }
   
     .sample:nth-child(2){
         position: absolute;
-        width: 170px;
-        height: 300px;
+        width: 130px;
+        height: 250px;
         top: 0;
         right: 20px;
         z-index: 1;
@@ -277,7 +279,7 @@
         border-radius: 20px;
         background-color:#629379;
     }
-    .products {
+    div.products {
         width: 300px;
         height: 50px;
         padding: 5rem 0 0;
