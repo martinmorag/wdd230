@@ -1,112 +1,179 @@
 {
     "rental" : [
         {
-            "type" : "Honda Metro Scooter",
-            "maxPersons" : 1,
-            "reservation" : [
+            "scooters" : [
                 {
-                    "halfDayPrice" : 20,
-                    "halfDayDuration" : "30 min",
-                    "fullDay" : 30
-                }
-            ],
-            "walkIn" : [
+                    "type" : "Honda Metro Scooter",
+                    "maxPersons" : 1,
+                    "cc" : 49,
+                    "reservation" : [
+                        {
+                            "halfDayPrice" : 20,
+                            "halfDayDuration" : "30 min",
+                            "fullDay" : 30
+                        }
+                    ],
+                    "walkIn" : [
+                        {
+                            "halfDayPrice" : 25,
+                            "halfDayDuration" : "30 min",
+                            "fullDay" : 35
+                        }
+                    ]
+                },
                 {
-                    "halfDayPrice" : 25,
-                    "halfDayDuration" : "30 min",
-                    "fullDay" : 35
-                }
-            ]
-        },
-        {
-            "type" : "Honda Dio Scooter",
-            "maxPersons" : 2,
-            "reservation" : [
+                    "type" : "Honda Dio Scooter",
+                    "maxPersons" : 2,
+                    "cc" : 110,
+                    "reservation" : [
+                        {
+                            "halfDayPrice" : 30,
+                            "halfDayDuration" : "30 min",
+                            "fullDay" : 40
+                        }
+                    ],
+                    "walkIn" : [
+                        {
+                            "halfDayPrice" : 35,
+                            "halfDayDuration" : "30 min",
+                            "fullDay" : 45
+                        }
+                    ]
+                },
                 {
-                    "halfDayPrice" : 30,
-                    "halfDayDuration" : "30 min",
-                    "fullDay" : 40
-                }
-            ],
-            "walkIn" : [
-                {
-                    "halfDayPrice" : 35,
-                    "halfDayDuration" : "30 min",
-                    "fullDay" : 45
-                }
-            ]
-        },
-        {
-            "type" : "Honda PCX150 Scooter",
-            "maxPersons" : 2,
-            "reservation" : [
-                {
-                    "halfDayPrice" : 40,
-                    "halfDayDuration" : "30 min",
-                    "fullDay" : 50
-                }
-            ],
-            "walkIn" : [
-                {
-                    "halfDayPrice" : 45,
-                    "halfDayDuration" : "30 min",
-                    "fullDay" : 55
-                }
-            ]
-        },
-        {
-            "type" : "Honda Pioneer ATV",
-            "maxPersons" : 4,
-            "reservation" : [
-                {
-                    "halfDayPrice" : 50,
-                    "halfDayDuration" : "30 min",
-                    "fullDay" : 70
-                }
-            ],
-            "walkIn" : [
-                {
-                    "halfDayPrice" : 60,
-                    "halfDayDuration" : "30 min",
-                    "fullDay" : 80
+                    "type" : "Honda PCX150 Scooter",
+                    "maxPersons" : 2,
+                    "cc" : 149,
+                    "reservation" : [
+                        {
+                            "halfDayPrice" : 40,
+                            "halfDayDuration" : "30 min",
+                            "fullDay" : 50
+                        }
+                    ],
+                    "walkIn" : [
+                        {
+                            "halfDayPrice" : 45,
+                            "halfDayDuration" : "30 min",
+                            "fullDay" : 55
+                        }
+                    ]
                 }
             ]
         },
         {
-            "type" : "jeep Wrangler - 4 door with a/c   ",
-            "maxPersons" : 5,
-            "reservation" : [
+            "ATVs" : [
                 {
-                    "halfDayPrice" : 70,
-                    "halfDayDuration" : "30 min",
-                    "fullDay" : 100
-                }
-            ],
-            "walkIn" : [
-                {
-                    "halfDayPrice" : 85,
-                    "halfDayDuration" : "30 min",
-                    "fullDay" : 125
+                    "type" : "Honda Pioneer ATV 1000",
+                    "maxPersons" : 4,
+                    "reservation" : [
+                        {
+                            "halfDayPrice" : 50,
+                            "halfDayDuration" : "30 min",
+                            "fullDay" : 70
+                        }
+                    ],
+                    "walkIn" : [
+                        {
+                            "halfDayPrice" : 60,
+                            "halfDayDuration" : "30 min",
+                            "fullDay" : 80
+                        }
+                    ]
                 }
             ]
         },
         {
-            "type" : "Jeep Wrangler - 2 door",
-            "maxPersons" : 4,
-            "reservation" : [
+            "Jeeps" : [
                 {
-                    "halfDayPrice" : 60,
-                    "halfDayDuration" : "30 min",
-                    "fullDay" : 85
-                }
-            ],
-            "walkIn" : [
+                    "type" : "jeep Wrangler - 4 door with a/c",
+                    "maxPersons" : 5,
+                    "reservation" : [
+                        {
+                            "halfDayPrice" : 70,
+                            "halfDayDuration" : "30 min",
+                            "fullDay" : 100
+                        }
+                    ],
+                    "walkIn" : [
+                        {
+                            "halfDayPrice" : 85,
+                            "halfDayDuration" : "30 min",
+                            "fullDay" : 125
+                        }
+                    ]
+                },
                 {
-                    "halfDayPrice" : 70,
-                    "halfDayDuration" : "30 min",
-                    "fullDay" : 90
+                    "type" : "Jeep Wrangler - 2 door",
+                    "maxPersons" : 4,
+                    "reservation" : [
+                        {
+                            "halfDayPrice" : 60,
+                            "halfDayDuration" : "30 min",
+                            "fullDay" : 85
+                        }
+                    ],
+                    "walkIn" : [
+                        {
+                            "halfDayPrice" : 70,
+                            "halfDayDuration" : "30 min",
+                            "fullDay" : 90
+                        }
+                    ]
                 }
             ]
+        }
+        
+    ],
+    "services" : [
+        {
+            "deposit" : "A $50 security deposit is required to confirm reservations."
+        },
+        {
+            "license" : "A valid drivers license is required in hand at the time of rental."
+        },
+        {
+            "age" : "No one under the age of 12 years of age are allowed to ride on the scooters."
+        },
+        {
+            "fuel" : "Fuel charge is not included."
+        },
+        {
+            "mileage" : "Unlimited mileage."
+        },
+        {
+            "insurance" : "Liability insurance is included."
+        },
+        {
+            "damage" : "Damage insurance is available for purchase."
+        },
+        {
+            "hotel" : "Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals."
+        },
+        {
+            "payment" : [
+                {
+                    "via" : "Google Pay"
+                },
+                {
+                    "via" : "Apple Pay"
+                },
+                {
+                    "via" : "Cash"
+                },
+                {
+                    "via" : "Credit Card"
+                },
+                {
+                    "via" : "Debit Card"
+                },
+                {
+                    "via" : "Venmo"
+                }
+            ]
+        },
+        {
+            "return" : "Rentals may be returned to either physical location."
         }
     ]
 }
