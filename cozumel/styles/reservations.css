@@ -1,0 +1,317 @@
+@media screen and (min-width: 1024px) {
+
+    body {
+        margin: 0 auto;
+        font-family: "Preahvihear";
+    }
+    /* HEADER */
+    #menu {
+        display: none;
+    }
+    
+    header {
+        background-color: #8ACB88;
+        display: flex;
+        justify-content: center;
+    }
+    .navigation {
+        display: flex;
+        padding: 1.5rem;
+        list-style: none;
+    }
+    .navigation a {
+        text-decoration: none;
+        margin-right: 2rem;
+        margin-left: 2rem;
+        color: black;
+        font-size: 1.2rem;
+    }
+    header ul {
+        margin: 0;
+    }
+    /* MAIN */
+    h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 150px;
+        background-color: #8ACB88;
+        margin: 100px 0;
+    }
+    .services {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #8ACB88;
+        width: 550px;
+        padding: 20px;
+        border-radius: 20px;
+        margin: 0 auto 50px;
+    }
+    .services li {
+        font-size: 18px;
+    }
+    /* FORM */
+    form {
+        margin: 100px auto 100px;
+        background-color: #8ACB88;
+        width: 400px;
+        padding: 20px;
+        border-radius: 20px;
+        text-align: center;
+    }
+    fieldset {
+        border: none;
+        display: flex;
+        flex-direction: column;
+    }
+    form h3 {
+        font-size: 25px;
+    }
+    .top {
+        text-align: start;
+        padding: 10px 0 2px;
+    }
+    .submitBtn {
+        padding: 15px;
+        border-radius: 20px;
+        margin: 30px 0;
+    }
+    
+    /* FOOTER */
+    footer {
+        background-color: #8ACB88;
+        height: 100px;
+    }
+    footer p {
+        display: flex;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+}
+@media screen and (max-width: 1024px) and (min-width: 500px) {
+
+    body {
+        margin: 0 auto;
+        font-family: "Preahvihear";
+    }
+    /* HEADER */
+    #menu {
+        display: none;
+    }
+    
+    header {
+        background-color: #8ACB88;
+        display: flex;
+        justify-content: center;
+    }
+    .navigation {
+        display: flex;
+        padding: 1.5rem;
+        list-style: none;
+    }
+    .navigation a {
+        text-decoration: none;
+        margin-right: 2rem;
+        margin-left: 2rem;
+        color: black;
+        font-size: 1.1rem;
+    }
+    header ul {
+        margin: 0;
+    }
+    /* MAIN */
+    h1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 150px;
+        background-color: #8ACB88;
+        margin: 100px 0;
+        font-size: 29px;
+    }
+    .services {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #8ACB88;
+        width: 400px;
+        padding: 20px;
+        border-radius: 20px;
+        margin: 0 auto 50px;
+    }
+    .services li {
+        font-size: 16px;
+    }
+    .services h2 {
+        font-size: 20px;
+    }
+    /* FORM */
+    form {
+        margin: 100px auto 100px;
+        background-color: #8ACB88;
+        width: 400px;
+        padding: 20px;
+        border-radius: 20px;
+        text-align: center;
+    }
+    fieldset {
+        border: none;
+        display: flex;
+        flex-direction: column;
+    }
+    h3 {
+        font-size: 22px;
+    }
+    .top {
+        text-align: start;
+        padding: 10px 0 2px;
+    }
+    .submitBtn {
+        padding: 15px;
+        border-radius: 20px;
+        margin: 30px 0;
+    }
+
+    /* FOOTER */
+    footer {
+        background-color: #8ACB88;
+        height: 100px;
+    }
+    footer p {
+        display: flex;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        font-size: 1.1rem;
+    }
+
+}
+@media screen and (max-width: 500px) {
+
+    body {
+        margin: 0 auto;
+        font-family: "Preahvihear";
+    }
+    /* HEADER */
+    header {
+        padding: 0.5rem;
+        background-color: #8ACB88;
+        max-width: 100%;
+    }
+    a {
+        text-decoration: none;
+    }
+    /* Hamburger button */
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+    }
+    .navigation li {
+        display: none;
+    }
+    .navigation li a {
+        display: block;
+        padding: 1rem;
+        text-align: center;
+        text-decoration: none;
+        color: #E6E8E6;
+    }
+    #menu {
+        display: block;
+        position: absolute;
+	    top: .75rem;
+        background-color: transparent;
+        border: none;
+    }
+    #menu::before {
+        content: "☰";
+        color: #E6E8E6;
+    }
+    #menu.open::before {
+        content: "☰";
+        color: #E6E8E6;
+    }
+    .open li {
+        display: block;
+        width: 100%;
+    }
+    .open li a {
+        display: block;
+    }
+    /* MAIN */
+    h1 {
+        display: flex;
+        align-items: center;
+        height: 150px;
+        background-color: #8ACB88;
+        margin: 100px 0;
+        padding: 0 20px;
+        font-size: 25px;
+        text-align: center;
+    }
+    .services {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        background-color: #8ACB88;
+        width: 250px;
+        padding: 20px;
+        border-radius: 20px;
+        margin: 0 auto 50px;
+    }
+    .services li {
+        font-size: 14px;
+    }
+    .services h2 {
+        font-size: 20px;
+        text-align: center;
+    }
+    /* FORM */
+    form {
+        margin: 100px auto 100px;
+        background-color: #8ACB88;
+        width: 300px;
+        padding: 20px;
+        border-radius: 20px;
+        text-align: center;
+    }
+    fieldset {
+        border: none;
+        display: flex;
+        flex-direction: column;
+    }
+    h3 {
+        font-size: 20px;
+    }
+    .top {
+        text-align: start;
+        padding: 10px 0 2px;
+        font-size: 15px;
+    }
+    .submitBtn {
+        padding: 15px;
+        border-radius: 20px;
+        margin: 30px 0;
+    }
+    
+    /* FOOTER */
+    footer {
+        background-color: #8ACB88;
+        height: 100px;
+    }
+    footer p {
+        display: flex;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        font-size: 1.1rem;
+    }
+
+}

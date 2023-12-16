@@ -1,0 +1,478 @@
+@media screen and (min-width: 1024px) {
+
+    body {
+        margin: 0 auto;
+        font-family: "Preahvihear";
+    }
+    /* HEADER */
+    #menu {
+        display: none;
+    }
+    
+    header {
+        background-color: #8ACB88;
+        display: flex;
+        justify-content: center;
+    }
+    .navigation {
+        display: flex;
+        padding: 1.5rem;
+        list-style: none;
+    }
+    .navigation a {
+        text-decoration: none;
+        margin-right: 2rem;
+        margin-left: 2rem;
+        color: black;
+        font-size: 1.2rem;
+    }
+    header ul {
+        margin: 0;
+    }
+    
+    
+    /* MAIN */
+    main {
+        background-color: #E4FDE1;
+    }
+    h1 {
+        margin: 0 auto;
+        height: 230px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .welcome {
+        width: 70%;
+        text-align: center;
+        margin: 0 auto 150px;
+        font-size: 20px;
+        background-color: #8ACB88;
+        padding: 40px 30px 40px 30px;
+        border-radius: 20px;
+    }
+    .hero {
+        position: relative;
+    }
+    picture img {
+        position: relative;
+        transform: translateX(-50%);
+        left: 50%;
+        border-radius: 20px;
+    }
+    .heroBtn {
+        position: absolute;
+        right: 42.5%;
+        transform: translateX(-50%);
+        bottom: 45%;
+        transform: translateY(-50%);
+        border-radius: 20px;
+        padding: 20px;
+        font-size: 20px;
+        background-color: #E4FDE1;
+    }
+    /* RENTALS AND WEATHER */
+    .middle_section {
+        display: flex;
+        justify-content: center;
+        margin: 150px 0;
+    }
+    /* RENTALS */
+    .rental {
+        width: 400px;
+        padding: 0 50px 0 0;
+    }
+    .rental li {
+        padding: 10px 0 10px;
+    }
+
+    /* WEATHER */
+    .weather {
+        text-align: center;
+        width: 500px;
+        padding: 0 0 0 50px;
+    }
+    #forecast {
+        font-weight: bold;
+    }
+    /* MAP */
+    .location {
+        display: flex;
+        justify-content: center;
+    }
+    iframe {
+        width: 90%;
+        height: 450px;
+        margin: 50px auto;
+    }
+    /* SOCIAL MEDIA */
+    ol {
+        list-style-type: none;
+        margin: 0;
+        padding: 50px;
+    }
+    .social_media {
+        display: flex;
+        justify-content: center;
+    }
+    .social_media img {
+        width: 50px;
+        height: auto;
+        padding: 0 15px 0;
+    }
+
+    
+    /* FOOTER */
+    footer {
+        background-color: #8ACB88;
+        height: 100px;
+    }
+    footer p {
+        display: flex;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+    }
+
+}
+@media screen and (max-width: 1024px) and (min-width: 500px) {
+
+    body {
+        margin: 0 auto;
+        font-family: "Preahvihear";
+    }
+    /* HEADER */
+    #menu {
+        display: none;
+    }
+    
+    header {
+        background-color: #8ACB88;
+        display: flex;
+        justify-content: center;
+    }
+    .navigation {
+        display: flex;
+        padding: 1.5rem;
+        list-style: none;
+    }
+    .navigation a {
+        text-decoration: none;
+        margin-right: 2rem;
+        margin-left: 2rem;
+        color: black;
+        font-size: 1.1rem;
+    }
+    header ul {
+        margin: 0;
+    }
+    
+    
+    /* MAIN */
+    main {
+        background-color: #E4FDE1;
+    }
+    h1 {
+        margin: 0 auto;
+        height: 230px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+    }
+    .welcome {
+        width: 70%;
+        text-align: center;
+        margin: 0 auto 150px;
+        font-size: 17px;
+        background-color: #8ACB88;
+        padding: 40px 30px 40px 30px;
+        border-radius: 20px;
+    }
+    .hero {
+        position: relative;
+    }
+    picture img {
+        position: relative;
+        transform: translateX(-50%);
+        left: 50%;
+        border-radius: 20px;
+    }
+    .heroBtn {
+        position: absolute;
+        right: 37%;
+        transform: translateX(-50%);
+        bottom: 45%;
+        transform: translateY(-50%);
+        border-radius: 20px;
+        padding: 20px;
+        font-size: 20px;
+        background-color: #E4FDE1;
+    }
+    /* RENTALS AND WEATHER */
+    .middle_section {
+        display: flex;
+        justify-content: center;
+        margin: 150px 0;
+    }
+    /* RENTALS */
+    .rental {
+        width: 300px;
+        padding: 0 20px 0 10px;
+    }
+    .rental li {
+        padding: 10px 0 10px;
+    }
+
+    /* WEATHER */
+    .weather {
+        text-align: center;
+        width: 350px;
+        padding: 0 10px 0 20px;
+    }
+    #forecast {
+        font-weight: bold;
+    }
+    /* MAP */
+    .location {
+        display: flex;
+        justify-content: center;
+    }
+    iframe {
+        width: 90%;
+        height: 450px;
+        margin: 50px auto;
+    }
+    /* SOCIAL MEDIA */
+    ol {
+        list-style-type: none;
+        margin: 0;
+        padding: 50px;
+    }
+    .social_media {
+        display: flex;
+        justify-content: center;
+    }
+    .social_media img {
+        width: 40px;
+        height: auto;
+        padding: 0 15px 0;
+    }
+
+    
+    /* FOOTER */
+    footer {
+        background-color: #8ACB88;
+        height: 100px;
+    }
+    footer p {
+        display: flex;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        font-size: 1.1rem;
+    }
+
+}
+@media screen and (max-width: 500px) {
+
+    body {
+        margin: 0 auto;
+        font-family: "Preahvihear";
+    }
+    /* HEADER */
+    header {
+        padding: 0.5rem;
+        background-color: #8ACB88;
+        max-width: 100%;
+    }
+    a {
+        text-decoration: none;
+    }
+    /* Hamburger button */
+    .navigation {
+        display: flex;
+        flex-direction: column;
+        list-style: none;
+    }
+    .navigation li {
+        display: none;
+    }
+    .navigation li a {
+        display: block;
+        padding: 1rem;
+        text-align: center;
+        text-decoration: none;
+        color: #E6E8E6;
+    }
+    #menu {
+        display: block;
+        position: absolute;
+	    top: .75rem;
+        background-color: transparent;
+        border: none;
+    }
+    #menu::before {
+        content: "☰";
+        color: #E6E8E6;
+    }
+    #menu.open::before {
+        content: "☰";
+        color: #E6E8E6;
+    }
+    .open li {
+        display: block;
+        width: 100%;
+    }
+    .open li a {
+        display: block;
+    }
+    
+    
+    /* MAIN */
+    main {
+        background-color: #E4FDE1;
+    }
+    h1 {
+        margin: 0 auto;
+        height: 230px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 30px;
+    }
+    .welcome {
+        width: 70%;
+        text-align: center;
+        margin: 0 auto 150px;
+        font-size: 14px;
+        background-color: #8ACB88;
+        padding: 40px 30px 40px 30px;
+        border-radius: 20px;
+    }
+    .hero {
+        position: relative;
+    }
+    picture img {
+        position: relative;
+        transform: translateX(-50%);
+        left: 50%;
+        border-radius: 20px;
+    }
+    .heroBtn {
+        position: absolute;
+        right: 30%;
+        transform: translateX(-50%);
+        bottom: 25%;
+        transform: translateY(-50%);
+        border-radius: 20px;
+        padding: 15px;
+        font-size: 12px;
+        background-color: #E4FDE1;
+    }
+    /* RENTALS AND WEATHER */
+    .middle_section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        margin: 150px 0;
+    }
+    /* RENTALS */
+    .rental {
+        width: 300px;
+        padding: 0 10px 0 40px;
+        font-size: 15px;
+    }
+    .rental li {
+        padding: 10px 0 10px;
+    }
+
+    /* WEATHER */
+    .weather {
+        text-align: center;
+        width: 300px;
+        margin: 80px auto 0;
+        padding: 0 10px 0 10px;
+        font-size: 15px;
+    }
+    #forecast {
+        font-weight: bold;
+    }
+    /* MAP */
+    .location {
+        display: flex;
+        justify-content: center;
+    }
+    iframe {
+        width: 90%;
+        height: 450px;
+        margin: 50px auto;
+    }
+    /* SOCIAL MEDIA */
+    ol {
+        list-style-type: none;
+        margin: 0;
+        padding: 50px;
+    }
+    .social_media {
+        display: flex;
+        justify-content: center;
+    }
+    .social_media img {
+        width: 40px;
+        height: auto;
+        padding: 0 15px 0;
+    }
+    /* MAIN */
+    main {
+        height: 90vh;
+        background-color: #E4FDE1;
+    }
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 20px;
+    }
+    table {
+        margin: 0 auto;
+        background-color: #8ACB88;
+        border-collapse: collapse;
+        font-size: 13px;
+    }
+    th {
+        text-align: center;
+        border: 0.5px solid #E4FDE1;
+        padding: 7px;
+    }
+    td {
+        text-align: center;
+        border: 1px solid #E4FDE1;
+        padding: 10px 10px;
+    }
+    caption {
+        font-size: 30px;
+        margin: 50px 0;
+    }
+    .rental {
+        padding: 15px;
+        font-size: 20px;
+    }
+    
+    /* FOOTER */
+    footer {
+        background-color: #8ACB88;
+        height: 100px;
+    }
+    footer p {
+        display: flex;
+        margin: 0;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        font-size: 1.1rem;
+    }
+
+}

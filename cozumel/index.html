@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scoots</title>
+
+    <meta name="author" content="Martin Marcelo Moraga Lopez">
+    <meta name="description" content="Welcome to Scoots! We are the best motor scooter rental company in Cozumel, check our website!">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <nav>
+            <button id="menu"></button>
+            <ul class="navigation">
+                <li><a href="https://martinmorag.github.io/wdd230/Cozumel/index.html" title="home" class="home">Home</a></li>
+                <li><a href="https://martinmorag.github.io/wdd230/Cozumel/rentals.html" title="rentals" class="rentals">Rentals</a></li>
+                <li><a href="https://martinmorag.github.io/wdd230/Cozumel/reservations.html" title="reservations" class="reservations">Reservations</a></li>
+                <li><a href="https://martinmorag.github.io/wdd230/Cozumel/contact.html" title="contact" class="contact">Contact</a></li>      
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="call">
+            <h1>Scoots!</h1>
+            <p class="welcome">
+                🌴 Welcome to Scoots! Where Island Adventures Begin! 🛵<br><br>
+
+                Nestled on the vibrant island of Cozumel, we are thrilled to introduce you to a unique motor scooter rental experience like no other. As the heart and soul of island exploration, Scoots invites you to embrace the freedom of the open road and the refreshing breeze of the Caribbean Sea.<br>
+
+                Whether you're a local looking for a convenient ride, a spontaneous tourist seeking an unforgettable adventure, or a motor scooter enthusiast eager to hit the scenic routes, Scoots is your ultimate destination. Cruise through the charming streets, discover hidden gems, and create memories that will last a lifetime.
+            </p>
+            <div class="hero">
+                <picture>
+                    <source srcset="images/hero_small.webp" width="250" height="167" media="(max-width: 500px)">
+                    <source srcset="images/hero_medium.webp" width="500" height="334" media="(max-width: 1024px)">
+                    <img alt="Hero Image" src="images/hero.webp" loading="lazy" width="1000" height="667">
+                </picture>
+                <button class="heroBtn" onclick="">Send us a message!</button>
+            </div>
+        </section>
+        <div class="middle_section">
+            <section class="rental">
+                <h2>Only some of our options...</h2>
+                <ul>
+                    <li class="offer"></li>
+                    <li class="offer"></li>
+                    <li class="offer"></li>
+                </ul>
+            </section>
+            <section class="weather">
+                <h3>Weather</h3>
+                <p>The current temperature in Cozumel, Mexico is <span id="current-temp"></span></p>
+                <div>
+                    <img id="weather-icon" src="path/to/placeholder-image.jpg" alt="Default Alt Text">
+                    <div class="caption"></div>
+                    <ul id="current-humidity"></ul>
+                    <ul id="forecast"></ul>
+                </div>
+            </section>
+        </div>
+        <div class="location">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d239293.76244058926!2d-87.0284159!3d20.4255199!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f4ef8efb0d19327%3A0x342ebcae5c018bfc!2sCozumel!5e0!3m2!1ses-419!2sar!4v1702670236673!5m2!1ses-419!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <ol>
+            <li class="social_media">
+                <a href="https://www.facebook.com/" target="_blank"><img alt="Facebook" src="images/facebook.png"></a>
+                <a href="https://twitter.com/home?lang=es" target="_blank"><img alt="Twitter" src="images/twitter.png"></a>
+                <a href="https://www.instagram.com/" target="_blank"><img alt="Instagram" src="images/instagram.png"></a>
+            </li>
+        </ol>
+    </main>
+    <footer>
+        <p>&copy; Martin Marcelo Moraga Lopez</p>
+    </footer>
+    <script src="scripts/base.js"></script>
+</body>
+</html>

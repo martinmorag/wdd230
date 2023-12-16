@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservations</title>
+    
+    <meta name="author" content="Martin Marcelo Moraga Lopez">
+    <meta name="description" content="Here you will find more information about our reservations, please check it out!">
+
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/reservations.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+<body>
+    <header>
+        <nav>
+            <button id="menu"></button>
+            <ul class="navigation">
+                <li><a href="https://martinmorag.github.io/wdd230/Cozumel/index.html" title="home" class="home">Home</a></li>
+                <li><a href="https://martinmorag.github.io/wdd230/Cozumel/rentals.html" title="rentals" class="rentals">Rentals</a></li>
+                <li><a href="https://martinmorag.github.io/wdd230/Cozumel/reservations.html" title="reservations" class="reservations">Reservations</a></li>
+                <li><a href="https://martinmorag.github.io/wdd230/Cozumel/contact.html" title="contact" class="contact">Contact</a></li>      
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Information about Reservations</h1>
+        <section class="services">
+            <h2>Rental Services and Agreements</h2>
+            <ul>
+                <li>A $50 security deposit is required to confirm reservations.</li>
+                <li>A valid drivers license is required in hand at the time of rental.</li>
+                <li>No one under the age of 12 years of age are allowed to ride on the scooters.</li>
+                <li>Fuel charge is not included.</li>
+                <li>Unlimited mileage.</li>
+                <li>Liability insurance is included.</li>
+                <li>Damage insurance is available for purchase.</li>
+                <li>Free delivery to Cozumel hotels or Airbnbs for 2+ day rentals.</li>
+                <li>Payment via Google Pay, Apple Pay, cash, credit card, debit card, or venmo.</li>
+                <li>Rentals may be returned to either physical location.</li>
+            </ul>
+        </section>
+        <form method="get">
+            <h3>Make a request!</h3>
+            <fieldset>
+            <label class="top">Name*</label><input name="name" class="name" type="text" required>
+            <label class="top">Email*</label><input name="email" class="email" type="email" pattern="[a-z0-9._%+\-]+@[a-z0-9.\-]+\.[a-z]{2,}$" required>
+            <label class="top">Phone Number*</label><input name="phone" class="phone" type="tel" required>
+            <label class="top">Rental Type*</label><input name="rental" class="rental" type="text" required>
+            <label class="top">Number*</label><input name="number" class="number" type="number" required>
+            <label class="top">Date*</label><input name="date" class="date" type="date" required>
+            <label class="top">How many days?*</label><input name="days" class="days" type="number" required>
+            <label class="top">Home state or country?*</label><input name="home" class="home" type="text" required>
+            <label class="top">Cruise Line</label><input name="cruise" class="cruise" type="text">
+            <label class="top">Is there a special request that you would like to make?</label><input name="matter" class="matter" type="text">
+            <label class="top">Ask your question</label>
+            <textarea name="message" class="question" rows="5" cols="20">         </textarea>
+            </fieldset>
+            <input name="submitBtn" class="submitBtn" type="submit" value="Send Request">
+        </form>
+    </main>
+    <footer>
+        <p>&copy; Martin Marcelo Moraga Lopez</p>
+    </footer>
+    <script src="scripts/reservations.js"></script>
+</body>
+</html>
