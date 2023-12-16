@@ -9,14 +9,14 @@
                     "reservation" : [
                         {
                             "halfDayPrice" : 20,
-                            "halfDayDuration" : "30 min",
+                            "halfDayDuration" : "3 hr",
                             "fullDay" : 30
                         }
                     ],
                     "walkIn" : [
                         {
                             "halfDayPrice" : 25,
-                            "halfDayDuration" : "30 min",
+                            "halfDayDuration" : "3 hr",
                             "fullDay" : 35
                         }
                     ]
@@ -28,14 +28,14 @@
                     "reservation" : [
                         {
                             "halfDayPrice" : 30,
-                            "halfDayDuration" : "30 min",
+                            "halfDayDuration" : "3 hr",
                             "fullDay" : 40
                         }
                     ],
                     "walkIn" : [
                         {
                             "halfDayPrice" : 35,
-                            "halfDayDuration" : "30 min",
+                            "halfDayDuration" : "3 hr",
                             "fullDay" : 45
                         }
                     ]
@@ -47,14 +47,14 @@
                     "reservation" : [
                         {
                             "halfDayPrice" : 40,
-                            "halfDayDuration" : "30 min",
+                            "halfDayDuration" : "3 hr",
                             "fullDay" : 50
                         }
                     ],
                     "walkIn" : [
                         {
                             "halfDayPrice" : 45,
-                            "halfDayDuration" : "30 min",
+                            "halfDayDuration" : "3 hr",
                             "fullDay" : 55
                         }
                     ]
@@ -69,14 +69,14 @@
                     "reservation" : [
                         {
                             "halfDayPrice" : 50,
-                            "halfDayDuration" : "30 min",
+                            "halfDayDuration" : "3 hr",
                             "fullDay" : 70
                         }
                     ],
                     "walkIn" : [
                         {
                             "halfDayPrice" : 60,
-                            "halfDayDuration" : "30 min",
+                            "halfDayDuration" : "3 hr",
                             "fullDay" : 80
                         }
                     ]
@@ -91,14 +91,14 @@
                     "reservation" : [
                         {
                             "halfDayPrice" : 70,
-                            "halfDayDuration" : "30 min",
+                            "halfDayDuration" : "3 hr",
                             "fullDay" : 100
                         }
                     ],
                     "walkIn" : [
                         {
                             "halfDayPrice" : 85,
-                            "halfDayDuration" : "30 min",
+                            "halfDayDuration" : "3 hr",
                             "fullDay" : 125
                         }
                     ]
@@ -109,14 +109,14 @@
                     "reservation" : [
                         {
                             "halfDayPrice" : 60,
-                            "halfDayDuration" : "30 min",
+                            "halfDayDuration" : "3 hr",
                             "fullDay" : 85
                         }
                     ],
                     "walkIn" : [
                         {
                             "halfDayPrice" : 70,
-                            "halfDayDuration" : "30 min",
+                            "halfDayDuration" : "3 hr",
                             "fullDay" : 90
                         }
                     ]
