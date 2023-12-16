@@ -425,41 +425,6 @@
         height: auto;
         padding: 0 15px 0;
     }
-    /* MAIN */
-    main {
-        height: 90vh;
-        background-color: #E4FDE1;
-    }
-    .container {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        margin: 0 20px;
-    }
-    table {
-        margin: 0 auto;
-        background-color: #8ACB88;
-        border-collapse: collapse;
-        font-size: 13px;
-    }
-    th {
-        text-align: center;
-        border: 0.5px solid #E4FDE1;
-        padding: 7px;
-    }
-    td {
-        text-align: center;
-        border: 1px solid #E4FDE1;
-        padding: 10px 10px;
-    }
-    caption {
-        font-size: 30px;
-        margin: 50px 0;
-    }
-    .rental {
-        padding: 15px;
-        font-size: 20px;
-    }
     
     /* FOOTER */
     footer {
