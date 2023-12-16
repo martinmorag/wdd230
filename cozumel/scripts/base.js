@@ -1,6 +1,6 @@
 /* PRICING */
 const offers = document.querySelectorAll('.offer');
-const url = "https://martinmorag.github.io/wdd230/Cozumel/data/pricing.json";
+const url = "https://martinmorag.github.io/wdd230/cozumel/data/pricing.json";
 
 async function apiFetchOffers() {
     try {
