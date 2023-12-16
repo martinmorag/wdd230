@@ -5,7 +5,7 @@ const fHalfDay = document.querySelectorAll('.f_half_day');
 const fFullDay = document.querySelectorAll('.f_full_day');
 const sHalfDay = document.querySelectorAll('.s_half_day');
 const sFullDay = document.querySelectorAll('.s_full_day');
-const url = "https://martinmorag.github.io/wdd230/Cozumel/data/pricing.json";
+const url = "https://martinmorag.github.io/wdd230/cozumel/data/pricing.json";
 
 async function apiFetchOffers() {
     try {
